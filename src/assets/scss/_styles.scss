@@ -1,7 +1,7 @@
 @import './pages/home-page';
 
 
-$c1-danger : red;
+$c1-danger : white;
 
 div{
     color:$c1-danger
@@ -27,14 +27,9 @@ div{
     padding: 80px 0;
 }
 
-
-.contact-header{
-    text-align: center;
-    margin-bottom: 50px;
-}
-
 .contact-main .container{
     display: flex;
+    // max-width: 90%;
 }
 
 .contact-main .info{
@@ -42,6 +37,7 @@ div{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    // padding-right: 30px;
 }
 
 .contact-main form{
@@ -49,6 +45,7 @@ div{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    margin-left: 30px;
 }
 
 .contact-main iframe{
@@ -63,7 +60,6 @@ div{
 }
 
 .contact-main .form button{
-    background-color: #000000;
     color: #ffffff;
     text-transform: uppercase;
     letter-spacing: 2px;
