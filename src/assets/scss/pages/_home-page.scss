@@ -1,0 +1,56 @@
+.carousel{
+    background-image: url(../../img/Coding_Cafe_640_x_340.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: white;
+    height: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.carousel-main p{
+    font-size: 25px;
+}
+
+.carousel-main h1{
+    font-size: 75px;
+}
+
+.carousel-main h1::before {
+    content: "THE";
+    color: red;
+}
+
+.carousel-main h1::after {
+    content: "!!!";
+    color: red;
+}
+
+.carousel-main a{
+    background-color: #e62b4a;
+    color: #ffffff;
+    padding: 10px 35px;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.carousel-main i{
+    font-size: 40px;
+    display: block;
+    /* animation-name: bounce;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-iteration-count:infinite;
+    animation-delay: 0s; */
+    animation: bounce 2s ease infinite 0s;
+}
+
+/* .carousel-main{
+    text-align: center;
+    padding: 100px;
+} */
