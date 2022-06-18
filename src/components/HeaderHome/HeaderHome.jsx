@@ -46,8 +46,8 @@ export default function HeaderHome(props) {
           </button>
         </form>
         {/* <nav className="navbar"> */}
-          <button className="btn btn-success" to="/registerpage">Register</button>
-          <button className="btn btn-primary" to="/loginpage">Login</button>
+          <NavLink className="btn btn-success" to="/registerpage">Register</NavLink>
+          <NavLink className="btn btn-primary" to="/loginpage">Login</NavLink>
         {/* </nav> */}
       </div>
     </header>
