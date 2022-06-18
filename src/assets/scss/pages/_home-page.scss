@@ -13,34 +13,30 @@
 
 .carousel-main p{
     font-size: 25px;
+    color: #cccccc;
 }
 
 .carousel-main h1{
     font-size: 75px;
+    color: #ffcc00;
 }
 
-.carousel-main a{
-    background-color: #e62b4a;
-    color: #ffffff;
-    padding: 10px 35px;
-    display: inline-block;
-    text-transform: uppercase;
-    font-size: 16px;
-    text-decoration: none;
-}
-
-.carousel-main i{
-    font-size: 40px;
-    display: block;
-    /* animation-name: bounce;
-    animation-duration: 2s;
-    animation-timing-function: ease;
-    animation-iteration-count:infinite;
-    animation-delay: 0s; */
-    animation: bounce 2s ease infinite 0s;
-}
-
-/* .carousel-main{
+.carousel-main{
     text-align: center;
     padding: 100px;
-} */
+}
+
+
+.item {
+    padding: 15px;  
+    box-sizing: border-box;
+}
+
+.item .content{
+    background-color: #ffffff;
+    border-radius: 25px;
+    padding: 35px 35px 20px;
+    text-align: center;
+    box-shadow: 1px 1px 10px rgb(221, 218, 218);
+    font-size: 13px;
+}
