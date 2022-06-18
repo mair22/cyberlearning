@@ -1,11 +1,8 @@
 @import './pages/home-page';
+@import './base/base';
 
 
-$c1-danger : white;
 
-div{
-    color:$c1-danger
-}
 
 .header .container{
     display: flex;

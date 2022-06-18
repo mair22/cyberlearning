@@ -12,7 +12,7 @@ export default function HomeTemplate(props) {
         return (
           <>
             <HeaderHome {...propsRoute} />
-            <div style={{ minHeight: "70vh" }}>
+            <div>
               <props.component {...propsRoute} />
             </div>
             <FooterHome {...propsRoute} />
