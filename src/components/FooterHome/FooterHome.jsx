@@ -5,7 +5,7 @@ export default function FooterHome(props) {
     <div className="bg-dark">
       <div className="container pt-5 pb-5">
         <div className="row">
-          <div className="col-4 info">
+          <div className="col-4">
             <h2>LOGO</h2>
             <p>CyberSoft Academy - Hệ thống đào tạo lập trình chuyên sâu theo dự án thực tế.</p>
             <br />
