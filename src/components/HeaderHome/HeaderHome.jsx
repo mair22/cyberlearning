@@ -35,20 +35,18 @@ export default function HeaderHome(props) {
           <input
             classname="form-control mr-sm-2"
             type="search"
-            placeholder="Search"
+            placeholder="Tìm kiếm"
             aria-label="Search"
           />
           <button
             classname="btn btn-outline-success my-2 my-sm-0"
             type="submit"
           >
-            Search
+            Tìm kiếm
           </button>
         </form>
-        {/* <nav className="navbar"> */}
-          <NavLink to="/registerpage" className="btn btn-success">Đăng kí</NavLink>
-          <NavLink to="/loginpage" className="btn btn-primary">Đăng nhập</NavLink>
-        {/* </nav> */}
+          <NavLink className="btn btn-success" to="/registerpage">Đăng ký</NavLink>
+          <NavLink className="btn btn-primary" to="/loginpage">Đăng nhập</NavLink>
       </div>
     </header>
   );
