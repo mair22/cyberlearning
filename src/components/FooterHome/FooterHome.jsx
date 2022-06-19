@@ -2,11 +2,11 @@ import React from "react";
 
 export default function FooterHome(props) {
   return (
-    <div className="bg-dark">
+    <div className="bg-dark text-white">
       <div className="container">
         <div className="row">
           <div className="col-4">
-            <h2>LOGO</h2>
+            <h2 className="text-white">LOGO</h2>
             <p>CyberSoft Academy - Hệ thống đào tạo lập trình chuyên sâu theo dự án thực tế.</p>
             <br />
             <h5 className="text-white">NHẬN TIN SỰ KIỆN & KHUYẾN MÃI</h5>
