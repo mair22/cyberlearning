@@ -1,21 +1,10 @@
-@import './pages/home-page';
+@import './themes/theme1';
+
 @import './base/base';
 
-
-
-
-.header .container{
-    display: flex;
-    flex-direction: row;
-    height: 100px;
-    /* flex-direction: row-reverse; /
-    / flex-direction:column; /
-    / flex-direction: column-reverse; /
-
-    / justify-content: flex-start; /
-    / justify-content: flex-end; /
-    / justify-content: center; /
-    / justify-content: space-around; */
-    justify-content: space-between;
-    align-items: center;
-}
+@import './pages/home-page';
+@import './pages/login-page';
+@import './pages/register-page';
+@import './components/footerHome';
+@import './components/headerHome';
+@import './pages/info';

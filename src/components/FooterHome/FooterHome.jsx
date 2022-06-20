@@ -2,14 +2,11 @@ import React from "react";
 
 export default function FooterHome(props) {
   return (
-    <div className="bg-dark text-white">
+    <footer className="footer">
       <div className="container">
         <div className="row">
           <div className="col-4">
-            <h2 className="text-white">LOGO</h2>
-            <p>CyberSoft Academy - Hệ thống đào tạo lập trình chuyên sâu theo dự án thực tế.</p>
-            <br />
-            <h5 className="text-white">NHẬN TIN SỰ KIỆN & KHUYẾN MÃI</h5>
+            <h4 className="text-white">NHẬN TIN SỰ KIỆN & KHUYẾN MÃI</h4>
             <p>CyberSoft sẽ gởi các khóa học trực tuyến & các chương trình CyberLive hoàn toàn MIỄN PHÍ và các chương trình KHUYẾN MÃI hấp dẫn đến các bạn</p>
             <br />
             <div className="form-row align-items-center">
@@ -17,7 +14,7 @@ export default function FooterHome(props) {
                 <input className="form-control" type="email" style={{ width: "100%" }} placeholder="your.address@email.com" />
               </div>
               <div className="col-4">
-                <button className="btn btn-warning text-white">ĐĂNG KÝ</button>
+                <button className="custom-btn animation">ĐĂNG KÝ</button>
               </div>
             </div>
           </div>
@@ -34,7 +31,7 @@ export default function FooterHome(props) {
               <input type="number" className="form-control" id="" placeholder="Điện thoại liên hệ *" />
             </div>
             <div className="form-group">
-              <button className="btn btn-warning text-white">ĐĂNG KÝ TƯ VẤN</button>
+              <button className="custom-btn animation">ĐĂNG KÝ TƯ VẤN</button>
             </div>
           </div>
 
@@ -43,6 +40,6 @@ export default function FooterHome(props) {
           </div>
         </div>
       </div>
-    </div>
+    </footer>
   );
 }
