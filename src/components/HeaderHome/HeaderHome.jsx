@@ -31,8 +31,8 @@ export default function HeaderHome(props) {
             </form>
           </div>
           <div>
-            <NavLink className="ml-5 text-warning" to="/registerpage">Đăng ký</NavLink>
-            <NavLink className="ml-2 text-warning" to="/loginpage" >Đăng nhập</NavLink>
+            <NavLink className="ml-5 text-warning font-weight-bolder" to="/registerpage">Đăng ký</NavLink>
+            <NavLink className="ml-2 text-warning font-weight-bolder" to="/loginpage" >Đăng nhập</NavLink>
           </div>
         </nav>
 

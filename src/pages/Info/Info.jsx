@@ -6,10 +6,10 @@ export default function Info() {
       <div className='container'>
         <ul className="nav nav-tabs" id="myTab" role="tablist">
           <li className="nav-item" role="presentation">
-            <a className="nav-link text-dark active" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="true">THÔNG TIN CÁ NHÂN</a>
+            <a className="nav-link text-warning active" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="true">THÔNG TIN CÁ NHÂN</a>
           </li>
           <li className="nav-item" role="presentation">
-            <a className="nav-link text-dark" id="courses-tab" data-toggle="tab" href="#courses" role="tab" aria-controls="courses" aria-selected="false">KHÓA HỌC CỦA TÔI</a>
+            <a className="nav-link text-warning" id="courses-tab" data-toggle="tab" href="#courses" role="tab" aria-controls="courses" aria-selected="false">KHÓA HỌC CỦA TÔI</a>
           </li>
         </ul>
         <div className="tab-content" id="myTabContent">
@@ -80,7 +80,7 @@ export default function Info() {
             <div className='list'>
               <div className='row item'>
                 <div className='col-3 image'>
-                  <img src="https://image.winudf.com/v2/image1/Y29tLnVndXIubG9ja3NjcmVlbl9zY3JlZW5fMF8xNTY3MjcwMTI3XzAzNA/screen-0.jpg?fakeurl=1&type=.webp" alt="" />
+                  <img src={require("../../assets/img/Coding_Cafe_640_x_340.jpg")} alt="" />
                 </div>
                 <div className='col-9 item-content'>
                   <h3>Lập trình frontend với reactjs</h3>
@@ -90,7 +90,7 @@ export default function Info() {
               </div>
               <div className='row item'>
                 <div className='col-3 image'>
-                  <img src="https://image.winudf.com/v2/image1/Y29tLnVndXIubG9ja3NjcmVlbl9zY3JlZW5fMF8xNTY3MjcwMTI3XzAzNA/screen-0.jpg?fakeurl=1&type=.webp" alt="" />
+                <img src={require("../../assets/img/Coding_Cafe_640_x_340.jpg")} alt="" />
                 </div>
                 <div className='col-9 item-content'>
                   <h3>Lập trình frontend với reactjs</h3>
@@ -100,7 +100,7 @@ export default function Info() {
               </div>
               <div className='row item'>
                 <div className='col-3 image'>
-                  <img src="https://image.winudf.com/v2/image1/Y29tLnVndXIubG9ja3NjcmVlbl9zY3JlZW5fMF8xNTY3MjcwMTI3XzAzNA/screen-0.jpg?fakeurl=1&type=.webp" alt="" />
+                <img src={require("../../assets/img/Coding_Cafe_640_x_340.jpg")} alt="" />
                 </div>
                 <div className='col-9 item-content'>
                   <h3>Lập trình frontend với reactjs</h3>
