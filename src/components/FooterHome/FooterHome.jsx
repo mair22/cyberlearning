@@ -14,7 +14,7 @@ export default function FooterHome(props) {
                 <input className="form-control" type="email" style={{ width: "100%" }} placeholder="your.address@email.com" />
               </div>
               <div className="col-4">
-                <button className="custom-btn animation">ĐĂNG KÝ</button>
+                <button className="btn btn-outline-warning">ĐĂNG KÝ</button>
               </div>
             </div>
           </div>
@@ -31,7 +31,7 @@ export default function FooterHome(props) {
               <input type="number" className="form-control" id="" placeholder="Điện thoại liên hệ *" />
             </div>
             <div className="form-group">
-              <button className="custom-btn animation">ĐĂNG KÝ TƯ VẤN</button>
+              <button className="btn btn-outline-warning">ĐĂNG KÝ TƯ VẤN</button>
             </div>
           </div>
 

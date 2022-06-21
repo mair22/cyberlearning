@@ -30,7 +30,7 @@ export default function RegisterPage(props) {
                       <input type="number" id="f" className="form-control form-control-lg" placeholder='Số điện thoại' />
                     </div>
                     <div className="d-flex justify-content-center">
-                      <button type="button" className="btn btn-success btn-block btn-lg gradient-custom-4 text-body">Đăng ký</button>
+                      <button type="button" className="custom-btn animation btn-block btn-lg gradient-custom-4 text-body">Đăng ký</button>
                     </div>
                     <p className="text-center text-muted mt-5 mb-0">Bạn đã có tài khoản? <a href="/loginpage" className="fw-bold text-body"><u>Đăng nhập</u></a></p>
                   </form>
