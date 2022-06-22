@@ -1,0 +1,57 @@
+.info{
+    background-image: url(../../img/bussiness_img_1.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    
+    .container{
+        padding-top: 20vh;
+        padding-bottom: 20vh;
+        .personalInfo{
+
+        }
+        .courses{
+            padding-bottom: 30px;
+            background-color: #ffffff;
+            border-radius: 5px;
+            .content{
+                padding: 50px 70px 30px 70px;
+
+                input{
+
+                }
+            }
+            .list{
+                .item{
+                    background-color: #ffffff;
+                    // border: 1px solid black;
+                    box-shadow: 1px 1px 10px rgb(221, 218, 218);
+
+                    margin: 0px 70px;
+                    padding: 0;
+                    margin-bottom: 30px;
+                    border-radius: 25px;
+                    .image{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        border-right:1px solid #e4dfde ;
+                        img{
+                            border-radius: 25px;
+                            width: 80%;
+                            height: 80%;
+                        }
+                    }
+                    
+                    .item-content{
+                        padding: 0 50px;
+                        button{
+                            float: right;
+                            margin-bottom: 15px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

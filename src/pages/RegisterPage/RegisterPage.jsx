@@ -3,7 +3,8 @@ import { NavLink } from 'react-router-dom'
 
 export default function RegisterPage(props) {
   return (
-    <section className=" bg-image" style={{ backgroundImage: 'url("https://mdbcdn.b-cdn.net/img/Photos/new-templates/search-box/img4.webp")' }}>
+    // <section className=" bg-image" style={{ backgroundImage: 'url("https://mdbcdn.b-cdn.net/img/Photos/new-templates/search-box/img4.webp")' }}>
+    <section className="register">
       <div className="mask d-flex align-items-center h-100 gradient-custom-3">
         <div className="container h-100">
           <div className="row d-flex justify-content-center align-items-center h-100">
@@ -31,7 +32,7 @@ export default function RegisterPage(props) {
                       <input type="number" id="f" className="form-control form-control-lg" placeholder='Số điện thoại' />
                     </div>
                     <div className="d-flex justify-content-center">
-                      <button type="button" className="btn btn-success btn-block btn-lg gradient-custom-4 text-body">Đăng ký</button>
+                      <button type="button" className="custom-btn animation btn-block btn-lg gradient-custom-4 text-body">Đăng ký</button>
                     </div>
                     <p className="text-center text-muted mt-5 mb-0">Bạn đã có tài khoản? <a href="/loginpage" className="fw-bold text-body"><u>Đăng nhập</u></a></p>
                   </form>

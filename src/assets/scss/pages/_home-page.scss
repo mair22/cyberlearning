@@ -1,10 +1,10 @@
 .carousel{
-    background-image: url(../../img/Coding_Cafe_640_x_340.jpg);
+    background-image: url(../../img/bussiness_img_1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     color: white;
-    height: 650px;
+    height: 95vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -26,6 +26,9 @@
     padding: 100px;
 }
 
+.listItem{
+    padding: 45px 0;
+}
 
 .item {
     padding: 15px;  

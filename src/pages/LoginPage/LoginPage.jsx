@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function LoginPage(props) {
   return (
-    <section className=" bg-image" style={{ backgroundImage: 'url("https://mdbcdn.b-cdn.net/img/Photos/new-templates/search-box/img4.webp")' }}>
+    <section className="login" >
       <div className="mask d-flex align-items-center h-100 gradient-custom-3">
         <div className="container h-100">
           <div className="row d-flex justify-content-center align-items-center h-100">
@@ -18,7 +18,7 @@ export default function LoginPage(props) {
                       <input type="password" id="" className="form-control form-control-lg" placeholder='Mật khẩu' />
                     </div>
                     <div className="d-flex justify-content-center">
-                      <button type="button" className="btn btn-success btn-block btn-lg gradient-custom-4 text-body">Đăng nhập</button>
+                      <button type="button" className="custom-btn animation btn-block btn-lg gradient-custom-4 text-body">Đăng nhập</button>
                     </div>
                     <p className="text-center text-muted mt-5 mb-0">Bạn chưa có tài khoản? <a href="/registerpage" className="fw-bold text-body"><u>Đăng kí</u></a></p>
                   </form>

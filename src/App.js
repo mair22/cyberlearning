@@ -7,6 +7,7 @@ import RegisterPage from "./pages/RegisterPage/RegisterPage";
 import LoginPage from "./pages/LoginPage/LoginPage";
 import ListPage from "./pages/ListPage/ListPage";
 import HomeTemplate from "./templates/HomeTemplate";
+import Info from "./pages/Info/Info";
 
 export const history = createBrowserHistory();
 
@@ -17,6 +18,8 @@ function App() {
         <HomeTemplate exact path="/loginpage" component={LoginPage} />
         <HomeTemplate exact path="/registerpage" component={RegisterPage} />
         <HomeTemplate exact path="/listpage" component={ListPage} />
+        <HomeTemplate exact path="/infopage" component={Info} />
+
 
         <HomeTemplate exact path="/" component={HomePage} />
       </switch>
