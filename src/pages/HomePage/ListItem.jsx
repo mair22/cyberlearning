@@ -13,7 +13,7 @@ export default function ListItem(props) {
               <div className="content">
                 <i className="fab fa-autoprefixer" />
                 <h1>Khóa học</h1>
-                <NavLink className="btn btn-warning" to="/registerpage">Đăng ký</NavLink>
+                <NavLink className="btn btn-warning" to="/dangky">Đăng ký</NavLink>
               </div>
             </div>
           </div>
@@ -22,7 +22,7 @@ export default function ListItem(props) {
               <div className="content">
                 <i className="fab fa-autoprefixer" />
                 <h1>Khóa học</h1>
-                <NavLink className="btn btn-warning" to="/registerpage">Đăng ký</NavLink>
+                <NavLink className="btn btn-warning" to="/dangky">Đăng ký</NavLink>
               </div>
             </div>
           </div>
@@ -31,7 +31,7 @@ export default function ListItem(props) {
               <div className="content">
                 <i className="fab fa-autoprefixer" />
                 <h1>Khóa học</h1>
-                <NavLink className="btn btn-warning" to="/registerpage">Đăng ký</NavLink>
+                <NavLink className="btn btn-warning" to="/dangky">Đăng ký</NavLink>
               </div>
             </div>
           </div>
@@ -40,7 +40,7 @@ export default function ListItem(props) {
               <div className="content">
                 <i className="fab fa-autoprefixer" />
                 <h1>Khóa học</h1>
-                <NavLink className="btn btn-warning" to="/registerpage">Đăng ký</NavLink>
+                <NavLink className="btn btn-warning" to="/dangky">Đăng ký</NavLink>
               </div>
             </div>
           </div>
@@ -52,7 +52,7 @@ export default function ListItem(props) {
               <div className="content">
                 <i className="fab fa-autoprefixer" />
                 <h1>Khóa học</h1>
-                <NavLink className="btn btn-warning" to="/registerpage">Đăng ký</NavLink>
+                <NavLink className="btn btn-warning" to="/dangky">Đăng ký</NavLink>
               </div>
             </div>
           </div>
@@ -61,7 +61,7 @@ export default function ListItem(props) {
               <div className="content">
                 <i className="fab fa-autoprefixer" />
                 <h1>Khóa học</h1>
-                <NavLink className="btn btn-warning" to="/registerpage">Đăng ký</NavLink>
+                <NavLink className="btn btn-warning" to="/dangky">Đăng ký</NavLink>
               </div>
             </div>
           </div>
@@ -70,7 +70,7 @@ export default function ListItem(props) {
               <div className="content">
                 <i className="fab fa-autoprefixer" />
                 <h1>Khóa học</h1>
-                <NavLink className="btn btn-warning" to="/registerpage">Đăng ký</NavLink>
+                <NavLink className="btn btn-warning" to="/dangky">Đăng ký</NavLink>
               </div>
             </div>
           </div>
@@ -79,7 +79,7 @@ export default function ListItem(props) {
               <div className="content">
                 <i className="fab fa-autoprefixer" />
                 <h1>Khóa học</h1>
-                <NavLink className="btn btn-warning" to="/registerpage">Đăng ký</NavLink>
+                <NavLink className="btn btn-warning" to="/dangky">Đăng ký</NavLink>
               </div>
             </div>
           </div>
