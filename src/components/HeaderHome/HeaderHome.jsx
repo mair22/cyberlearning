@@ -31,8 +31,8 @@ export default function HeaderHome(props) {
             </form>
           </div>
           <div>
-            <NavLink className="ml-5 text-warning font-weight-bolder" to="/registerpage">Đăng ký</NavLink>
-            <NavLink className="ml-2 text-warning font-weight-bolder" to="/loginpage" >Đăng nhập</NavLink>
+            <NavLink className="ml-5 text-warning font-weight-bolder" to="/dangky">Đăng ký</NavLink>
+            <NavLink className="ml-2 text-warning font-weight-bolder" to="/dangnhap" >Đăng nhập</NavLink>
           </div>
         </nav>
 
@@ -74,9 +74,12 @@ export default function HeaderHome(props) {
           >
             Tìm kiếm
           </button>
+<<<<<<< HEAD
+        </form>
+          <NavLink className="btn btn-success" to="/registerpage">Đăng ký</NavLink>
+          <NavLink className="btn btn-primary" to="/loginpage">Đăng nhập</NavLink>
+=======
         </form> */}
-
-
       </div>
     </header>
   );

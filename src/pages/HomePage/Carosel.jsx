@@ -8,7 +8,7 @@ export default function Carosel() {
       <main className="carousel-main">
           <h1>KHỞI ĐẦU SỰ NGHIỆP CỦA BẠN</h1>
           <p>Trở thành lập trình viên chuyên nghiệp tại Cybersoft</p>
-          <NavLink className="custom-btn animation text-dark mr-3" to="/listpage">XEM KHÓA HỌC</NavLink>
+          <NavLink className="custom-btn animation text-dark mr-3" to="/danhmuckhoahoc">XEM KHÓA HỌC</NavLink>
       </main>
       </div>
     </section>
