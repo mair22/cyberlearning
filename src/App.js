@@ -13,6 +13,7 @@ import UserPage from "./pages/UserPage/UserPage";
 import ClassPage from "./pages/ClassPage/ClassPage";
 import UpdateClass from "./pages/ClassPage/UpdateClass";
 import UpdateUser from "./pages/UserPage/UpdateUser";
+import DetailPage from "./pages/DetailPage/DetailPage";
 
 export const history = createBrowserHistory();
 
@@ -29,6 +30,7 @@ function App() {
         <HomeTemplate exact path="/quanlylophoc" component={ClassPage} />
         <HomeTemplate exact path="/themkhoahoc" component={UpdateClass} />
         <HomeTemplate exact path="/themnguoidung" component={UpdateUser} />
+        <HomeTemplate exact path="/chitietkhoahoc" component={DetailPage} />
 
 
         <HomeTemplate exact path="/" component={HomePage} />

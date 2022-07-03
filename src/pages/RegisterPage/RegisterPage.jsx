@@ -1,5 +1,33 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
+import { http } from '../../ulti/setting';
+import { Button } from "antd";
+
+async function dangky(){
+  let result = await http.post('http://elearningnew.cybersoft.edu.vn/api/QuanLyNguoiDung/DangKy');
+  let hocvien = [];
+  try {
+    let data = result.data;
+    // console.log(data);
+    for(let i = 0; i < i; i++){
+      hocvien.push(data[i]);
+    }
+  }
+  catch(err){
+    console.log(err);
+  }
+
+  for(let data of hocvien){
+    console.log(data);
+  }
+
+}
+
+async function luu(){
+  let storage = JSON.stringify(dangky);
+  localStorage.setItem("dangky", storage);
+}
+
 
 export default function RegisterPage(props) {
   return (
@@ -14,27 +42,27 @@ export default function RegisterPage(props) {
                   <h2 className="text-uppercase text-center mb-5">Đăng ký</h2>
                   <form>
                     <div className="form-outline mb-4">
-                      <input type="text" id="" className="form-control form-control-lg" placeholder='Tài khoản' />
+                      <input type="text" id="taiKhoan" className="form-control form-control-lg" placeholder='Tài khoản' />
                     </div>
                     <div className="form-outline mb-4">
-                      <input type="password" id="" className="form-control form-control-lg" placeholder='Mật khẩu' />
+                      <input type="password" id="matKhau" className="form-control form-control-lg" placeholder='Mật khẩu' />
                     </div>
                     <div className="form-outline mb-4">
-                      <input type="password" id="" className="form-control form-control-lg" placeholder='Nhập lại mật khẩu' />
+                      <input type="password" id="matKhau" className="form-control form-control-lg" placeholder='Nhập lại mật khẩu' />
                     </div>
                     <div className="form-outline mb-4">
-                      <input type="text" id="" className="form-control form-control-lg" placeholder='Họ tên' />
+                      <input type="text" id="hoTen" className="form-control form-control-lg" placeholder='Họ tên' />
                     </div>
                     <div className="form-outline mb-4">
-                      <input type="email" id="" className="form-control form-control-lg" placeholder='Email' />
+                      <input type="email" id="email" className="form-control form-control-lg" placeholder='Email' />
                     </div>
                     <div className="form-outline mb-4">
-                      <input type="number" id="f" className="form-control form-control-lg" placeholder='Số điện thoại' />
+                      <input type="number" id="soDT" className="form-control form-control-lg" placeholder='Số điện thoại' />
                     </div>
                     <div className="d-flex justify-content-center">
-                      <button type="button" className="custom-btn animation btn-block btn-lg gradient-custom-4 text-body">Đăng ký</button>
+                      <Button type="button" onClick={dangky} className="custom-btn animation btn-block btn-lg gradient-custom-4 text-body">Đăng ký</Button>
                     </div>
-                    <p className="text-center text-muted mt-5 mb-0">Bạn đã có tài khoản? <a href="/loginpage" className="fw-bold text-body"><u>Đăng nhập</u></a></p>
+                    <p className="text-center text-muted mt-5 mb-0">Bạn đã có tài khoản? <NavLink to="/dangnhap" className="fw-bold text-body"><u>Đăng nhập</u></NavLink></p>
                   </form>
                 </div>
               </div>
