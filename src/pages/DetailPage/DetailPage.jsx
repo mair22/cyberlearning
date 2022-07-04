@@ -4,20 +4,21 @@ import { Button } from "antd";
 import { NavLink } from "react-router-dom";
 
 async function dangky1(){
-  let result = await http.get('http://elearningnew.cybersoft.edu.vn/api/QuanLyKhoaHoc/LayDanhSachKhoaHoc?MaNhom=GP01');
-  let firstEight = [];
+  let code = http.get('http://elearningnew.cybersoft.edu.vn/api/QuanLyKhoaHoc/LayDanhSachKhoaHoc?MaNhom=GP01')
+  let result = http.get('http://elearningnew.cybersoft.edu.vn/api/QuanLyKhoaHoc/LayThongTinKhoaHoc?maKhoaHoc=LTC_GP01');
+  let infor = [];
   try {
     let data = result.data;
     // console.log(data);
-    for(let i = 0; i < 1; i++){
-      firstEight.push(data[i]);
+    for(let i = code.length; i < code.length; i++){
+      infor.push(data[i]);
     }
   }
   catch(err){
     console.log(err);
   }
 
-  for(let data of firstEight){
+  for(let data of infor){
     console.log(data);
   }
 

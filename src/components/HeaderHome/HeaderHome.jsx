@@ -9,7 +9,7 @@ async function list(){
   try {
     let data = result.data;
     // console.log(data);
-    for(let i = 0; i < 7; i++){
+    for(let i = 0; i < 6; i++){
       dropDown.push(data[i]);
     }
   }
@@ -37,7 +37,7 @@ export default function HeaderHome(props) {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav mr-auto">
               <li className="nav-item dropdown">
-                <Button className="nav-link dropdown-toggle text-warning" onClick={list} id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                <Button className="nav-link dropdown-toggle text-warning" onClick={list} id="navbardropdown" role="button" data-toggle="dropdown" aria-expanded="false">
                   Danh mục khóa học
                 </Button>
                 <div className="dropdown-menu" aria-labelledby="navbarDropdown">
