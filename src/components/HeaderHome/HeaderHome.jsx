@@ -1,5 +1,27 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import { http } from '../../ulti/setting';
+import { Button } from "antd";
+
+async function list(){
+  let result = await http.get('http://elearningnew.cybersoft.edu.vn/api/QuanLyKhoaHoc/LayDanhMucKhoaHoc');
+  let dropDown = [];
+  try {
+    let data = result.data;
+    // console.log(data);
+    for(let i = 0; i < 6; i++){
+      dropDown.push(data[i]);
+    }
+  }
+  catch(err){
+    console.log(err);
+  }
+
+  for(let data of dropDown){
+    console.log(data);
+  }
+
+}
 
 export default function HeaderHome(props) {
   return (
@@ -15,13 +37,16 @@ export default function HeaderHome(props) {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav mr-auto">
               <li className="nav-item dropdown">
-                <a className="nav-link dropdown-toggle text-warning" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                <Button className="nav-link dropdown-toggle text-warning" onClick={list} id="navbardropdown" role="button" data-toggle="dropdown" aria-expanded="false">
                   Danh mục khóa học
-                </a>
+                </Button>
                 <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a className="dropdown-item" href="#">Action</a>
-                  <a className="dropdown-item" href="#">Another action</a>
-                  <a className="dropdown-item" href="#">Something else here</a>
+                  <Button className="dropdown-item" onClick={list}>Lập trình Backend</Button>
+                  <Button className="dropdown-item" onClick={list}>Thiết kế Web</Button>
+                  <Button className="dropdown-item" onClick={list}>Lập trình di động</Button>
+                  <Button className="dropdown-item" onClick={list}>Lập trình Frontend</Button>
+                  <Button className="dropdown-item" onClick={list}>Lập trình Full Stack</Button>
+                  <Button className="dropdown-item" onClick={list}>Tư duy lập trình</Button>
                 </div>
               </li>
             </ul>
