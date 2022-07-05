@@ -1,85 +1,61 @@
 import { Route } from 'react-router-dom'
-import Admin from '../components/Admin/Admin';
-import {
-    MenuFoldOutlined,
-    MenuUnfoldOutlined,
-    UploadOutlined,
-    UserOutlined,
-    VideoCameraOutlined,
-  } from "@ant-design/icons";
-import { Layout, Menu } from "antd";
-import React, { useState } from "react";
-const { Header, Sider, Content } = Layout;
+import React from "react";
 
 export default function AdminTemplate(props) {
-        const [collapsed, setCollapsed] = useState(false);
+  // let list = document.querySelectorAll('.list');
+  // for (let i=0; i<list.length; i++){
+  //   list[i].onlick = function(){
+  //     let j=0;
+  //     while(j<list.length){
+  //       list[j++].className='list';
+  //     }
+  //     list[i].className='list active';
+  //   }
+  // }
   return (
     <Route
       exact
       path={props.path}
       render={(propsRoute) => {
         return (
-            <div className='container'>
-        <Layout style={{height:'100vh'}}>
-          <Sider trigger={null} collapsible collapsed={collapsed}>
-            <div className="logo" />
-            <Menu
-              theme="dark"
-              mode="inline"
-              defaultSelectedKeys={["1"]}
-              items={[
-                {
-                  key: "1",
-                  icon: <UserOutlined />,
-                  label: "nav 1",
-                },
-                {
-                  key: "2",
-                  icon: <VideoCameraOutlined />,
-                  label: "nav 2",
-                },
-                {
-                  key: "3",
-                  icon: <UploadOutlined />,
-                  label: "nav 3",
-                },
-              ]}
-            />
-          </Sider>
-          <Layout className="site-layout">
-            <Header
-              className="site-layout-background"
-              style={{
-                padding: 0,
-              }}
-            >
-              {React.createElement(
-                collapsed ? MenuUnfoldOutlined : MenuFoldOutlined,
-                {
-                  className: "trigger",
-                  onClick: () => setCollapsed(!collapsed),
-                }
-              )}
-            </Header>
-            <Content
-              className="site-layout-background"
-              style={{
-                margin: "24px 16px",
-                padding: 24,
-                minHeight: 280,
-              }}
-            >
-              <props.component {...propsRoute} />
-            </Content>
-          </Layout>
-        </Layout>
-      </div>
-        //   <>
-        //     <Admin {...propsRoute} />
-        //     <div>
-        //       <props.component {...propsRoute} />
-        //     </div>
-        //   </>
+          <div className='container'>
+            <div className='row' style={{ height: '100vh' }}>
+              <div className='sidebar col-3'>
+                <div className="sidebar-brand">
+                  <img src="https://cybersoft.edu.vn/wp-content/uploads/2021/03/logo-cyber-nav.svg" alt="" />
+                </div>
+                <div className="sidebar-menu">
+                  <ul className='sidebar-menu-list'>
+                    <li className='list active'>
+                      <a href="#"><i className="fab fa-leanpub"></i><span>Quản lý khóa học</span></a>
+                    </li>
+                    <li className='list'>
+                      <a href="#"><i className="fa fa-users"></i><span>Quản lý người dùng</span></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div className="layout col-9">
+                <div className='header'>
+                  <div className='navbar-user'>
+                    <img src="https://haycafe.vn/wp-content/uploads/2021/11/Anh-avatar-dep-chat-lam-hinh-dai-dien.jpg" alt="" />
+                    <span>Nguyễn Văn A</span>
+                    <ul className='navbar-user-menu'>
+                      <li className='navbar-user-item'>
+                        <a href="">Cập nhật thông tin</a>
+                      </li>
+                      <li className='navbar-user-item'>
+                        <a href="">Đăng xuất</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div className="content">
+                  <props.component {...propsRoute} />
+                </div>
+              </div>
+            </div>
+          </div>
         );
       }}
     />

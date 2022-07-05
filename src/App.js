@@ -13,7 +13,10 @@ import UserPage from "./pages/UserPage/UserPage";
 import ClassPage from "./pages/ClassPage/ClassPage";
 import UpdateClass from "./pages/ClassPage/UpdateClass";
 import UpdateUser from "./pages/UserPage/UpdateUser";
+<<<<<<< HEAD
+=======
 import DetailPage from "./pages/DetailPage/DetailPage";
+>>>>>>> master
 
 export const history = createBrowserHistory();
 
@@ -21,16 +24,25 @@ function App() {
   return (
     <Router history={history}>
       <switch>
+<<<<<<< HEAD
+=======
         <HomeTemplate exact path="/demo" component={Demo} />
+>>>>>>> master
         <HomeTemplate exact path="/dangnhap" component={LoginPage} />
         <HomeTemplate exact path="/dangky" component={RegisterPage} />
         <HomeTemplate exact path="/danhmuckhoahoc" component={ListPage} />
         <HomeTemplate exact path="/thongtinnguoidung" component={Info} />
         <AdminTemplate exact path="/quanlynguoidung" component={UserPage} />
+<<<<<<< HEAD
+        <AdminTemplate exact path="/quanlykhoahoc" component={ClassPage} />
+        <AdminTemplate exact path="/themkhoahoc" component={UpdateClass} />
+        <AdminTemplate exact path="/themnguoidung" component={UpdateUser} />
+=======
         <HomeTemplate exact path="/quanlylophoc" component={ClassPage} />
         <HomeTemplate exact path="/themkhoahoc" component={UpdateClass} />
         <HomeTemplate exact path="/themnguoidung" component={UpdateUser} />
         <HomeTemplate exact path="/chitietkhoahoc" component={DetailPage} />
+>>>>>>> master
 
 
         <HomeTemplate exact path="/" component={HomePage} />
