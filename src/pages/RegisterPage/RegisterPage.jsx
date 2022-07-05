@@ -1,10 +1,10 @@
-import React, { useState } from 'react'
-import { NavLink } from 'react-router-dom'
-import { http } from '../../ulti/setting';
+import React, { useState } from "react";
+import { NavLink } from "react-router-dom";
+import { http } from "../../ulti/setting";
 import { Button } from "antd";
 
 async function dangky(taiKhoan, matKhau, hoTen, soDT, maNhom, email) {
-  console.log(taiKhoan, matKhau);
+  console.log(taiKhoan, matKhau, hoTen, soDT, maNhom, email);
   const body = {
     taiKhoan: taiKhoan,
     matKhau: matKhau,
@@ -34,7 +34,6 @@ async function dangky(taiKhoan, matKhau, hoTen, soDT, maNhom, email) {
   } catch (error) {
     console.log(error);
   }
-
 }
 
 export default function RegisterPage(props) {
@@ -56,27 +55,76 @@ export default function RegisterPage(props) {
                   <h2 className="text-uppercase text-center mb-5">Đăng ký</h2>
                   <form>
                     <div className="form-outline mb-4">
-                      <input type="text" id="taiKhoan" className="form-control form-control-lg" placeholder='Tài khoản' onChange={(event) => setTaiKhoan(event.target.value)} />
+                      <input
+                        type="text"
+                        id="taiKhoan"
+                        className="form-control form-control-lg"
+                        placeholder="Tài khoản"
+                        onChange={(event) => setTaiKhoan(event.target.value)}
+                      />
                     </div>
                     <div className="form-outline mb-4">
-                      <input type="password" id="matKhau" className="form-control form-control-lg" placeholder='Mật khẩu' onChange={(event) => setMatKhau(event.target.value)} />
+                      <input
+                        type="password"
+                        id="matKhau"
+                        className="form-control form-control-lg"
+                        placeholder="Mật khẩu"
+                        onChange={(event) => setMatKhau(event.target.value)}
+                      />
                     </div>
                     <div className="form-outline mb-4">
-                      <input type="password" id="matKhau" className="form-control form-control-lg" placeholder='Nhập lại mật khẩu' onChange={(event) => setMatKhau(event.target.value)} />
+                      <input
+                        type="password"
+                        id="matKhau"
+                        className="form-control form-control-lg"
+                        placeholder="Nhập lại mật khẩu"
+                        onChange={(event) => setMatKhau(event.target.value)}
+                      />
                     </div>
                     <div className="form-outline mb-4">
-                      <input type="text" id="hoTen" className="form-control form-control-lg" placeholder='Họ tên' onChange={(event) => setHoTen(event.target.value)} />
+                      <input
+                        type="text"
+                        id="hoTen"
+                        className="form-control form-control-lg"
+                        placeholder="Họ tên"
+                        onChange={(event) => setHoTen(event.target.value)}
+                      />
                     </div>
                     <div className="form-outline mb-4">
-                      <input type="email" id="email" className="form-control form-control-lg" placeholder='Email' onChange={(event) => setEmail(event.target.value)} />
+                      <input
+                        type="email"
+                        id="email"
+                        className="form-control form-control-lg"
+                        placeholder="Email"
+                        onChange={(event) => setEmail(event.target.value)}
+                      />
                     </div>
                     <div className="form-outline mb-4">
-                      <input type="number" id="soDT" className="form-control form-control-lg" placeholder='Số điện thoại' onChange={(event) => setSoDT(event.target.value)} />
+                      <input
+                        type="text"
+                        id="soDT"
+                        className="form-control form-control-lg"
+                        placeholder="Số điện thoại"
+                        onChange={(event) => setSoDT(event.target.value)}
+                      />
                     </div>
                     <div className="d-flex justify-content-center">
-                      <Button type="button" onClick={() => dangky(taiKhoan, matKhau, hoTen, soDT, maNhom, email)} className="custom-btn animation btn-block btn-lg gradient-custom-4 text-body">Đăng ký</Button>
+                      <Button
+                        type="button"
+                        onClick={() =>
+                          dangky(taiKhoan, matKhau, hoTen, soDT, maNhom, email)
+                        }
+                        className="custom-btn animation btn-block btn-lg gradient-custom-4 text-body"
+                      >
+                        Đăng ký
+                      </Button>
                     </div>
-                    <p className="text-center text-muted mt-5 mb-0">Bạn đã có tài khoản? <NavLink to="/dangnhap" className="fw-bold text-body"><u>Đăng nhập</u></NavLink></p>
+                    <p className="text-center text-muted mt-5 mb-0">
+                      Bạn đã có tài khoản?{" "}
+                      <NavLink to="/dangnhap" className="fw-bold text-body">
+                        <u>Đăng nhập</u>
+                      </NavLink>
+                    </p>
                   </form>
                 </div>
               </div>
@@ -85,5 +133,5 @@ export default function RegisterPage(props) {
         </div>
       </div>
     </section>
-  )
+  );
 }
