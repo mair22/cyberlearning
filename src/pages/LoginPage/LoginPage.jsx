@@ -11,7 +11,7 @@ async function dangNhap(taiKhoan, matKhau) {
   };
   try {
     const result = await http.post(
-      "http://elearningnew.cybersoft.edu.vn/api/QuanLyNguoiDung/DangNhap",
+      "https://elearningnew.cybersoft.edu.vn/api/QuanLyNguoiDung/DangNhap",
       body
     );
     console.log(result.data.accessToken);

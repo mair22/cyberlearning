@@ -4,8 +4,8 @@ import { Button } from "antd";
 import { NavLink } from "react-router-dom";
 
 async function dangky1(){
-  let code = http.get('http://elearningnew.cybersoft.edu.vn/api/QuanLyKhoaHoc/LayDanhSachKhoaHoc?MaNhom=GP01')
-  let result = http.get('http://elearningnew.cybersoft.edu.vn/api/QuanLyKhoaHoc/LayThongTinKhoaHoc?maKhoaHoc=LTC_GP01');
+  let code = http.get('https://elearningnew.cybersoft.edu.vn/api/QuanLyKhoaHoc/LayDanhSachKhoaHoc?MaNhom=GP01')
+  let result = http.get('https://elearningnew.cybersoft.edu.vn/api/QuanLyKhoaHoc/LayThongTinKhoaHoc?maKhoaHoc=LTC_GP01');
   let infor = [];
   try {
     let data = result.data;

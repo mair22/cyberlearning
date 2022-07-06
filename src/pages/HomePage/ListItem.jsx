@@ -170,79 +170,111 @@ export default function ListItem(props) {
     <section className="listItem">
       <div className="container">
         <h1>Các khóa học mới nhất</h1>
-        <div className="row">
-          <div className="col-3">
-            <div className="item">
-              <div className="content">
-                <i className="fab fa-autoprefixer" />
+        <div className="list row">
+          <div className="item col-12 col-sm-6 col-lg-3">
+            <div className="content">
+              <div className="thumbnail">
+                <img src="https://elearningnew.cybersoft.edu.vn/hinhanh/342t354y_gp01.png" alt="" />
+              </div>
+              <div>
                 <h1>Thành thạo Bootstrap qua 10 website</h1>
-                <Button className="btn btn-warning" onClick={dangky1}>Đăng ký</Button>
+                <div className="readmore">
+                <Button className="custom-btn animation" onClick={dangky1}>Đăng ký</Button>
+                </div>
               </div>
             </div>
           </div>
-          <div className="col-3">
-            <div className="item">
-              <div className="content">
-                <i className="fab fa-autoprefixer" />
-                <h1>Lỗi 500</h1>
-                <Button className="btn btn-warning" onClick={dangky2}>Đăng ký</Button>
+          <div className="item col-12 col-sm-6 col-lg-3">
+            <div className="content">
+              <div className="thumbnail">
+                <img src="https://elearningnew.cybersoft.edu.vn/hinhanh/342t354y_gp01.png" alt="" />
+              </div>
+              <div>
+                <h1>Thành thạo Bootstrap qua 10 website</h1>
+                <div className="readmore">
+                <Button className="custom-btn animation" onClick={dangky2}>Đăng ký</Button>
+                </div>
               </div>
             </div>
           </div>
-          <div className="col-3">
-            <div className="item">
-              <div className="content">
-                <i className="fab fa-autoprefixer" />
-                <h1>Lập trình dữ liệu sql 123</h1>
-                <Button className="btn btn-warning" onClick={dangky3}>Đăng ký</Button>
+          <div className="item col-12 col-sm-6 col-lg-3">
+            <div className="content">
+              <div className="thumbnail">
+                <img src="https://elearningnew.cybersoft.edu.vn/hinhanh/342t354y_gp01.png" alt="" />
+              </div>
+              <div>
+                <h1>Thành thạo Bootstrap qua 10 website</h1>
+                <div className="readmore">
+                <Button className="custom-btn animation" onClick={dangky3}>Đăng ký</Button>
+                </div>
               </div>
             </div>
           </div>
-          <div className="col-3">
-            <div className="item">
-              <div className="content">
-                <i className="fab fa-autoprefixer" />
-                <h1>Lập trình hướng đối tượng</h1>
-                <Button className="btn btn-warning" onClick={dangky4}>Đăng ký</Button>
+          <div className="item col-12 col-sm-6 col-lg-3">
+            <div className="content">
+              <div className="thumbnail">
+                <img src="https://elearningnew.cybersoft.edu.vn/hinhanh/342t354y_gp01.png" alt="" />
+              </div>
+              <div>
+                <h1>Thành thạo Bootstrap qua 10 website</h1>
+                <div className="readmore">
+                <Button className="custom-btn animation" onClick={dangky4}>Đăng ký</Button>
+                </div>
               </div>
             </div>
           </div>
         </div>
 
-        <div className="row">
-          <div className="col-3">
-            <div className="item">
-              <div className="content">
-                <i className="fab fa-autoprefixer" />
-                <h1>Lập trình Fullstack java 6</h1>
-                <Button className="btn btn-warning" onClick={dangky5}>Đăng ký</Button>
+        <div className="list row">
+          <div className="item col-12 col-sm-6 col-lg-3">
+            <div className="content">
+              <div className="thumbnail">
+                <img src="https://elearningnew.cybersoft.edu.vn/hinhanh/342t354y_gp01.png" alt="" />
+              </div>
+              <div>
+                <h1>Thành thạo Bootstrap qua 10 website</h1>
+                <div className="readmore">
+                <Button className="custom-btn animation" onClick={dangky5}>Đăng ký</Button>
+                </div>
               </div>
             </div>
           </div>
-          <div className="col-3">
-            <div className="item">
-              <div className="content">
-                <i className="fab fa-autoprefixer" />
-                <h1>Lập trình web Django Python 5</h1>
-                <Button className="btn btn-warning" onClick={dangky6}>Đăng ký</Button>
+          <div className="item col-12 col-sm-6 col-lg-3">
+            <div className="content">
+              <div className="thumbnail">
+                <img src="https://elearningnew.cybersoft.edu.vn/hinhanh/342t354y_gp01.png" alt="" />
+              </div>
+              <div>
+                <h1>Thành thạo Bootstrap qua 10 website</h1>
+                <div className="readmore">
+                <Button className="custom-btn animation" onClick={dangky6}>Đăng ký</Button>
+                </div>
               </div>
             </div>
           </div>
-          <div className="col-3">
-            <div className="item">
-              <div className="content">
-                <i className="fab fa-autoprefixer" />
-                <h1>Angular JS 6 123</h1>
-                <Button className="btn btn-warning" onClick={dangky7}>Đăng ký</Button>
+          <div className="item col-12 col-sm-6 col-lg-3">
+            <div className="content">
+              <div className="thumbnail">
+                <img src="https://elearningnew.cybersoft.edu.vn/hinhanh/342t354y_gp01.png" alt="" />
+              </div>
+              <div>
+                <h1>Thành thạo Bootstrap qua 10 website</h1>
+                <div className="readmore">
+                <Button className="custom-btn animation" onClick={dangky7}>Đăng ký</Button>
+                </div>
               </div>
             </div>
           </div>
-          <div className="col-3">
-            <div className="item">
-              <div className="content">
-                <i className="fab fa-autoprefixer" />
-                <h1>Machine learning</h1>
-                <Button className="btn btn-warning" onClick={dangky8}>Đăng ký</Button>
+          <div className="item col-12 col-sm-6 col-lg-3">
+            <div className="content">
+              <div className="thumbnail">
+                <img src="https://elearningnew.cybersoft.edu.vn/hinhanh/342t354y_gp01.png" alt="" />
+              </div>
+              <div>
+                <h1>Thành thạo Bootstrap qua 10 website</h1>
+                <div className="readmore">
+                <Button className="custom-btn animation" onClick={dangky4}>Đăng ký</Button>
+                </div>
               </div>
             </div>
           </div>

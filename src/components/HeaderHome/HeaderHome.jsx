@@ -4,7 +4,7 @@ import { http } from '../../ulti/setting';
 import { Button } from "antd";
 
 async function list(){
-  let result = await http.get('http://elearningnew.cybersoft.edu.vn/api/QuanLyKhoaHoc/LayDanhMucKhoaHoc');
+  let result = await http.get('https://elearningnew.cybersoft.edu.vn/api/QuanLyKhoaHoc/LayDanhMucKhoaHoc');
   let dropDown = [];
   try {
     let data = result.data;
@@ -60,51 +60,6 @@ export default function HeaderHome(props) {
             <NavLink className="ml-2 text-warning font-weight-bolder" to="/dangnhap" >Đăng nhập</NavLink>
           </div>
         </nav>
-
-        {/* <NavLink className="logo" to="/">
-          <img src="https://cybersoft.edu.vn/wp-content/uploads/2021/03/logo-cyber-nav.svg" alt="" />
-        </NavLink>
-        <div class="dropdown">
-          <button
-            class="btn btn-secondary dropdown-toggle"
-            type="button"
-            id="dropdownMenuButton"
-            data-toggle="dropdown"
-            aria-expanded="false"
-          >
-            Danh sách khóa học
-          </button>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-            <a class="dropdown-item" href="#">
-              Action
-            </a>
-            <a class="dropdown-item" href="#">
-              Another action
-            </a>
-            <a class="dropdown-item" href="#">
-              Something else here
-            </a>
-          </div>
-        </div>
-        <form classname="form-inline my-2 my-lg-0">
-          <input
-            classname="form-control mr-sm-2"
-            type="search"
-            placeholder="Tìm kiếm"
-            aria-label="Search"
-          />
-          <button
-            classname="btn btn-outline-success my-2 my-sm-0"
-            type="submit"
-          >
-            Tìm kiếm
-          </button>
-<<<<<<< HEAD
-        </form>
-          <NavLink className="btn btn-success" to="/registerpage">Đăng ký</NavLink>
-          <NavLink className="btn btn-primary" to="/loginpage">Đăng nhập</NavLink>
-=======
-        </form> */}
       </div>
     </header>
   );

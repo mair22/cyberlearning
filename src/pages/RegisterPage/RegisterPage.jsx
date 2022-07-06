@@ -15,7 +15,7 @@ async function dangky(taiKhoan, matKhau, hoTen, soDT, maNhom, email) {
   };
   try {
     const result = await http.post(
-      "http://elearningnew.cybersoft.edu.vn/api/QuanLyNguoiDung/DangKy",
+      "https://elearningnew.cybersoft.edu.vn/api/QuanLyNguoiDung/DangKy",
       body
     );
     console.log(result.data.accessToken);
@@ -26,7 +26,7 @@ async function dangky(taiKhoan, matKhau, hoTen, soDT, maNhom, email) {
 
   try {
     const result = await http.post(
-      "http://elearningnew.cybersoft.edu.vn/api/QuanLyNguoiDung/DangNhap",
+      "https://elearningnew.cybersoft.edu.vn/api/QuanLyNguoiDung/DangNhap",
       body
     );
     console.log(result.data.accessToken);
