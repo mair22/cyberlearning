@@ -179,7 +179,7 @@ export default function ListItem(props) {
               <div>
                 <h1>Thành thạo Bootstrap qua 10 website</h1>
                 <div className="readmore">
-                <Button className="custom-btn animation" onClick={dangky1}>Đăng ký</Button>
+                <button className="custom-btn animation" onClick={dangky1}>Đăng ký</button>
                 </div>
               </div>
             </div>
@@ -192,7 +192,7 @@ export default function ListItem(props) {
               <div>
                 <h1>Thành thạo Bootstrap qua 10 website</h1>
                 <div className="readmore">
-                <Button className="custom-btn animation" onClick={dangky2}>Đăng ký</Button>
+                <button className="custom-btn animation" onClick={dangky2}>Đăng ký</button>
                 </div>
               </div>
             </div>
@@ -205,7 +205,7 @@ export default function ListItem(props) {
               <div>
                 <h1>Thành thạo Bootstrap qua 10 website</h1>
                 <div className="readmore">
-                <Button className="custom-btn animation" onClick={dangky3}>Đăng ký</Button>
+                <button className="custom-btn animation" onClick={dangky3}>Đăng ký</button>
                 </div>
               </div>
             </div>
@@ -218,7 +218,7 @@ export default function ListItem(props) {
               <div>
                 <h1>Thành thạo Bootstrap qua 10 website</h1>
                 <div className="readmore">
-                <Button className="custom-btn animation" onClick={dangky4}>Đăng ký</Button>
+                <button className="custom-btn animation" onClick={dangky4}>Đăng ký</button>
                 </div>
               </div>
             </div>
@@ -234,7 +234,7 @@ export default function ListItem(props) {
               <div>
                 <h1>Thành thạo Bootstrap qua 10 website</h1>
                 <div className="readmore">
-                <Button className="custom-btn animation" onClick={dangky5}>Đăng ký</Button>
+                <button className="custom-btn animation" onClick={dangky5}>Đăng ký</button>
                 </div>
               </div>
             </div>
@@ -247,7 +247,7 @@ export default function ListItem(props) {
               <div>
                 <h1>Thành thạo Bootstrap qua 10 website</h1>
                 <div className="readmore">
-                <Button className="custom-btn animation" onClick={dangky6}>Đăng ký</Button>
+                <button className="custom-btn animation" onClick={dangky6}>Đăng ký</button>
                 </div>
               </div>
             </div>
@@ -260,7 +260,7 @@ export default function ListItem(props) {
               <div>
                 <h1>Thành thạo Bootstrap qua 10 website</h1>
                 <div className="readmore">
-                <Button className="custom-btn animation" onClick={dangky7}>Đăng ký</Button>
+                <button className="custom-btn animation" onClick={dangky7}>Đăng ký</button>
                 </div>
               </div>
             </div>
@@ -273,7 +273,7 @@ export default function ListItem(props) {
               <div>
                 <h1>Thành thạo Bootstrap qua 10 website</h1>
                 <div className="readmore">
-                <Button className="custom-btn animation" onClick={dangky4}>Đăng ký</Button>
+                <button className="custom-btn animation" onClick={dangky4}>Đăng ký</button>
                 </div>
               </div>
             </div>

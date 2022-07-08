@@ -1,3 +1,4 @@
+import { Button } from 'antd/lib/radio'
 import React from 'react'
 
 export default function Info() {
@@ -73,62 +74,66 @@ export default function Info() {
           {/* KHÓA HỌC CỦA TÔI */}
           <div className="courses tab-pane fade" id="courses" role="tabpanel" aria-labelledby="courses-tab">
             <div className='content row'>
-              <h2 className='col-8'>CÁC KHÓA HỌC ĐÃ THAM GIA</h2>
-              <input className='col-3 form-control' type="text" placeholder='Nhập khóa học cần tìm' />
+              <h2 className='col-12 col-lg-9'>CÁC KHÓA HỌC ĐÃ THAM GIA</h2>
+              <input className='col-12 col-lg-3 form-control' type="text" placeholder='Nhập khóa học cần tìm' />
             </div>
 
-            <div className='list'>
-              <div className='row item'>
-                <div className='col-3 image'>
-                  <img src={require("../../assets/img/Coding_Cafe_640_x_340.jpg")} alt="" />
-                </div>
-                <div className='col-9 item-content'>
-                  <h3>Lập trình frontend với reactjs</h3>
-                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit dolor ex dolore blanditiis. Minus placeat nam vero autem eaque ipsam.</p>
-                  <button className='btn btn-danger'>Hủy</button>
-                </div>
-              </div>
-              <div className='row item'>
-                <div className='col-3 image'>
-                <img src={require("../../assets/img/Coding_Cafe_640_x_340.jpg")} alt="" />
-                </div>
-                <div className='col-9 item-content'>
-                  <h3>Lập trình frontend với reactjs</h3>
-                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit dolor ex dolore blanditiis. Minus placeat nam vero autem eaque ipsam.</p>
-                  <button className='btn btn-danger'>Hủy</button>
+            <div className="list row">
+              <div className="item col-12 col-sm-6 col-lg-3">
+                <div className="content">
+                  <div className="thumbnail">
+                    <img src="https://elearningnew.cybersoft.edu.vn/hinhanh/342t354y_gp01.png" alt="" />
+                  </div>
+                  <div>
+                    <h1>Thành thạo Bootstrap qua 10 website</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, voluptatem error.</p>
+                    <div className="readmore">
+                      <button className="custom-btn animation">Hủy</button>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div className='row item'>
-                <div className='col-3 image'>
-                <img src={require("../../assets/img/Coding_Cafe_640_x_340.jpg")} alt="" />
-                </div>
-                <div className='col-9 item-content'>
-                  <h3>Lập trình frontend với reactjs</h3>
-                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit dolor ex dolore blanditiis. Minus placeat nam vero autem eaque ipsam.</p>
-                  <button className='btn btn-danger'>Hủy</button>
+              <div className="item col-12 col-sm-6 col-lg-3">
+                <div className="content">
+                  <div className="thumbnail">
+                    <img src="https://elearningnew.cybersoft.edu.vn/hinhanh/342t354y_gp01.png" alt="" />
+                  </div>
+                  <div>
+                    <h1>Thành thạo Bootstrap qua 10 website</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, voluptatem error.</p>
+                    <div className="readmore">
+                      <button className="custom-btn animation">Hủy</button>
+                    </div>
+                  </div>
                 </div>
               </div>
-              {/* Số trang */}
-              <div className=''>
-                <nav aria-label="Page navigation example">
-                  <ul className="pagination justify-content-center">
-                    <li className="page-item">
-                      <a className="page-link" href="#" aria-label="Previous">
-                        <span aria-hidden="true">«</span>
-                        <span className="sr-only">Previous</span>
-                      </a>
-                    </li>
-                    <li className="page-item"><a className="page-link" href="#">1</a></li>
-                    <li className="page-item"><a className="page-link" href="#">2</a></li>
-                    <li className="page-item"><a className="page-link" href="#">3</a></li>
-                    <li className="page-item">
-                      <a className="page-link" href="#" aria-label="Next">
-                        <span aria-hidden="true">»</span>
-                        <span className="sr-only">Next</span>
-                      </a>
-                    </li>
-                  </ul>
-                </nav>
+              <div className="item col-12 col-sm-6 col-lg-3">
+                <div className="content">
+                  <div className="thumbnail">
+                    <img src="https://elearningnew.cybersoft.edu.vn/hinhanh/342t354y_gp01.png" alt="" />
+                  </div>
+                  <div>
+                    <h1>Thành thạo Bootstrap qua 10 website</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, voluptatem error.</p>
+                    <div className="readmore">
+                      <button className="custom-btn animation">Hủy</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="item col-12 col-sm-6 col-lg-3">
+                <div className="content">
+                  <div className="thumbnail">
+                    <img src="https://elearningnew.cybersoft.edu.vn/hinhanh/342t354y_gp01.png" alt="" />
+                  </div>
+                  <div>
+                    <h1>Thành thạo Bootstrap qua 10 website</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, voluptatem error.</p>
+                    <div className="readmore">
+                      <button className="custom-btn animation">Hủy</button>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
