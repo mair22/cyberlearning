@@ -1,6 +1,5 @@
 import "./App.css";
-import React from "react";
-import { BrowserRouter, Route, Router } from "react-router-dom";
+import { BrowserRouter, Route, Router, Switch } from "react-router-dom";
 import { createBrowserHistory } from "history";
 import HomePage from "./pages/HomePage/HomePage";
 import RegisterPage from "./pages/RegisterPage/RegisterPage";
@@ -21,7 +20,7 @@ export const history = createBrowserHistory();
 function App() {
   return (
     <Router history={history}>
-      <switch>
+      <Switch>
         <HomeTemplate exact path="/demo" component={Demo} />
         <HomeTemplate exact path="/dangnhap" component={LoginPage} />
         <HomeTemplate exact path="/dangky" component={RegisterPage} />
@@ -34,7 +33,7 @@ function App() {
 
 
         <HomeTemplate exact path="/" component={HomePage} />
-      </switch>
+      </Switch>
     </Router>
   );
 }

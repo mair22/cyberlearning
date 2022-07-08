@@ -84,7 +84,7 @@ export default function Info() {
                 </div>
                 <div className='col-9 item-content'>
                   <h3>Lập trình frontend với reactjs</h3>
-                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit dolor ex dolore blanditiis. Minus placeat nam vero autem eaque ipsam.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab accusantium dolorum sunt odio rerum ex dicta dignissimos impedit ipsam asperiores?</p>
+                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit dolor ex dolore blanditiis. Minus placeat nam vero autem eaque ipsam.</p>
                   <button className='btn btn-danger'>Hủy</button>
                 </div>
               </div>
@@ -94,7 +94,7 @@ export default function Info() {
                 </div>
                 <div className='col-9 item-content'>
                   <h3>Lập trình frontend với reactjs</h3>
-                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit dolor ex dolore blanditiis. Minus placeat nam vero autem eaque ipsam.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab accusantium dolorum sunt odio rerum ex dicta dignissimos impedit ipsam asperiores?</p>
+                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit dolor ex dolore blanditiis. Minus placeat nam vero autem eaque ipsam.</p>
                   <button className='btn btn-danger'>Hủy</button>
                 </div>
               </div>
@@ -104,7 +104,7 @@ export default function Info() {
                 </div>
                 <div className='col-9 item-content'>
                   <h3>Lập trình frontend với reactjs</h3>
-                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit dolor ex dolore blanditiis. Minus placeat nam vero autem eaque ipsam.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab accusantium dolorum sunt odio rerum ex dicta dignissimos impedit ipsam asperiores?</p>
+                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit dolor ex dolore blanditiis. Minus placeat nam vero autem eaque ipsam.</p>
                   <button className='btn btn-danger'>Hủy</button>
                 </div>
               </div>

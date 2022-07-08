@@ -1,11 +1,9 @@
 .login{
-    background-image: url(https://mdbcdn.b-cdn.net/img/Photos/new-templates/search-box/img4.webp);
+    background-image: url(../../img/bussiness_img_1.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    // padding-top: 80px;
-    // padding-bottom: 80px;
-    padding-top: 20vh;
-    padding-bottom: 20vh;
-
+    .row{
+        min-height: 100vh;
+    }
 }
