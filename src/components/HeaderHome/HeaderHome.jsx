@@ -9,7 +9,7 @@ async function list(){
   try {
     let data = result.data;
     // console.log(data);
-    for(let i = 0; i < 6; i++){
+    for(let i = 0; i < i; i++){
       dropDown.push(data[i]);
     }
   }

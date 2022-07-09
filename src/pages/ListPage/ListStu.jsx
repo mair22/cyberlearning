@@ -1,11 +1,27 @@
+import { Button } from "antd";
 import React from "react";
 import { NavLink } from "react-router-dom";
 import { http } from "../../ulti/setting"
 
+async function renderButton(){
+  let result = await http.get('http://elearningnew.cybersoft.edu.vn/api/QuanLyKhoaHoc/LayKhoaHocTheoDanhMuc?maDanhMuc=TuDuy&MaNhom=GP01')
+  let study = [];
+  try {
+    let data = result.data;
+    console.log(data);
+    for(let i = 0; i < data.length; i++){
+      study.push(data[i]);
+    }
+  }
+  catch(err){
+    console.log(err);
+  }
 
+  for(let data of study){
+    console.log(data);
+  }
 
-async function dangky1(){
-  let result = await http.get('http://elearningnew.cybersoft.edu.vn/api/QuanLyKhoaHoc/LayKhoaHocTheoDanhMuc?maDanhMuc=TuDuy&MaNhom=GP01');}
+}
 
 export default function ListStu(props) {
   return (
@@ -17,9 +33,9 @@ export default function ListStu(props) {
             <div className="content">
               <i className="fab fa-autoprefixer" />
               <h1>Khóa học</h1>
-              <NavLink className="btn btn-warning" to="/dangky">
+              <Button className="btn btn-warning" onClick={renderButton} >
                 Đăng ký
-              </NavLink>
+              </Button>
             </div>
           </div>
         </div>
@@ -28,9 +44,9 @@ export default function ListStu(props) {
             <div className="content">
               <i className="fab fa-autoprefixer" />
               <h1>Khóa học</h1>
-              <NavLink className="btn btn-warning" to="/dangky">
+              <Button className="btn btn-warning" onClick={renderButton}>
                 Đăng ký
-              </NavLink>
+              </Button>
             </div>
           </div>
         </div>

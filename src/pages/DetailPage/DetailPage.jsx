@@ -3,22 +3,21 @@ import { http } from '../../ulti/setting';
 import { Button } from "antd";
 import { NavLink } from "react-router-dom";
 
-async function dangky1(){
-  let code = http.get('http://elearningnew.cybersoft.edu.vn/api/QuanLyKhoaHoc/LayDanhSachKhoaHoc?MaNhom=GP01')
-  let result = http.get('http://elearningnew.cybersoft.edu.vn/api/QuanLyKhoaHoc/LayThongTinKhoaHoc?maKhoaHoc=LTC_GP01');
-  let infor = [];
+async function dangky(){
+  let result = http.get('http://elearningnew.cybersoft.edu.vn/api/QuanLyKhoaHoc/LayKhoaHocTheoDanhMuc?maDanhMuc=TuDuy&MaNhom=GP01')
+  let study = [];
   try {
     let data = result.data;
     // console.log(data);
-    for(let i = code.length; i < code.length; i++){
-      infor.push(data[i]);
+    for(let i = 0; i < i; i++){
+      study.push(data[i]);
     }
   }
   catch(err){
     console.log(err);
   }
 
-  for(let data of infor){
+  for(let data of study){
     console.log(data);
   }
 
@@ -32,7 +31,7 @@ export default function DetailPage(props) {
               <div className="content">
                 <i className="fab fa-autoprefixer" />
                 <h1>Thành thạo Bootstrap qua 10 website</h1>
-                <Button className="btn btn-warning" onClick={dangky1}>Đăng ký</Button>
+                <Button className="btn btn-warning" onClick={dangky}>Đăng ký</Button>
               </div>
             </div>
           </div>

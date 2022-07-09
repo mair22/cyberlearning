@@ -54,13 +54,14 @@ export default function LoginPage(props) {
                       />
                     </div>
                     <div className="d-flex justify-content-center">
-                      <Button
+                      <NavLink
+                        to="/thongtinnguoidung"
                         type="button"
                         onClick={() => dangNhap(taiKhoan, matKhau)}
                         className="custom-btn animation btn-block btn-lg gradient-custom-4 text-body"
                       >
                         Đăng nhập
-                      </Button>
+                      </NavLink>
                     </div>
                     <p className="text-center text-muted mt-5 mb-0">
                       Bạn chưa có tài khoản?{" "}

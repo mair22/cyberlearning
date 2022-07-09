@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 
 export default function Info() {
   return (
@@ -64,7 +65,7 @@ export default function Info() {
                 <hr />
                 <div className="row">
                   <div className="col-sm-12">
-                    <a className="btn btn-warning " href="#">Thay đổi thông tin</a>
+                    <NavLink className="btn btn-warning " to="/quanlynguoidung">Thay đổi thông tin</NavLink >
                   </div>
                 </div>
               </div>

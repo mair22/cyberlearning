@@ -1,3 +1,4 @@
+import { Button } from "antd";
 import React from "react";
 import { NavLink } from "react-router-dom";
 import "../../assets/scss/pages/_userpage.scss";
@@ -18,12 +19,12 @@ export default function UserPage(props) {
               className="col-10 form-control form-control-lg"
               placeholder="Tài khoản hoặc họ tên người dùng"
             />
-            <button
+            <Button
               type="button"
               className="col-2 custom-btn animation text-body"
             >
               Tìm
-            </button>
+            </Button>
           </div>
         </form>
         {/* Bảng danh sách thông tin */}
