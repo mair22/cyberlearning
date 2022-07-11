@@ -1,39 +1,29 @@
-import React from 'react'
-import { http } from '../../ulti/setting';
-import { Button } from "antd";
-import { NavLink } from "react-router-dom";
+import React, { Component } from "react";
+import { connect } from "react-redux";
+import { fetchCourseDetail } from "../../redux/actions/Main";
 
-async function dangky(){
-  let result = http.get('http://elearningnew.cybersoft.edu.vn/api/QuanLyKhoaHoc/LayKhoaHocTheoDanhMuc?maDanhMuc=TuDuy&MaNhom=GP01')
-  let study = [];
-  try {
-    let data = result.data;
-    // console.log(data);
-    for(let i = 0; i < i; i++){
-      study.push(data[i]);
-    }
+class DetailPage extends Component {
+  render() {
+    return (
+      <div>
+        <img src={this.props.courseDetail.hinhAnh} alt="courseDetail" />
+        <h3>{this.props.courseDetail.tenKhoaHoc}</h3>
+      </div>
+    );
   }
-  catch(err){
-    console.log(err);
+  componentDidMount() {
+    this.props.dispatch(fetchCourseDetail(this.props.match.params.maKhoaHoc));
   }
-
-  for(let data of study){
-    console.log(data);
-  }
-
 }
-
-
-export default function DetailPage(props) {
-  return (
-    <div className="col-3">
-            <div className="item">
-              <div className="content">
-                <i className="fab fa-autoprefixer" />
-                <h1>Thành thạo Bootstrap qua 10 website</h1>
-                <Button className="btn btn-warning" onClick={dangky}>Đăng ký</Button>
-              </div>
-            </div>
-          </div>
-  )
-}
+const mapStateToProps = (state) => ({
+  courseDetail: state.course.courseDetail || {
+    maKhoaHoc: "",
+    tenKhoaHoc: "",
+    hinhAnh: "",
+    nguoiTao: {
+      taiKhoan: "",
+      hoTen: "",
+    },
+  },
+});
+export default connect(mapStateToProps)(DetailPage);

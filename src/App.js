@@ -33,7 +33,7 @@ function App() {
         <HomeTemplate exact path="/quanlylophoc" component={ClassPage} />
         <HomeTemplate exact path="/themkhoahoc" component={UpdateClass} />
         <HomeTemplate exact path="/themnguoidung" component={UpdateUser} />
-        <HomeTemplate exact path="/chitietkhoahoc" component={DetailPage} />
+        <HomeTemplate exact path="/chitietkhoahoc/:maKhoaHoc" component={DetailPage} />
 
 
         <HomeTemplate exact path="/" component={HomePage} />
