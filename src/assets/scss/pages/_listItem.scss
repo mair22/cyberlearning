@@ -1,34 +1,16 @@
 @import "../themes/theme1";
 
-
-.line {
-    background-image: linear-gradient(to left, #ffa07a, #ff0000, #8b0000);
-    font-size: 30px;
-    padding: 25px;
+.listItem{
+    padding-top: 30px;
+    padding-bottom: 30px;
     h1{
-        // text-align: center;
+        text-align: center;
         font-size: 50px;
         @include respond(tablet) {
             font-size: 35px;
         }
         @include respond(phone) {
             font-size: 25px;
-        } 
-    }
-}
-
-
-.listStu{
-    padding-top: 30px;
-    padding-bottom: 30px;
-    h2{
-        text-align: center;
-        font-size: 45px;
-        @include respond(tablet) {
-            font-size: 30px;
-        }
-        @include respond(phone) {
-            font-size: 22px;
         } 
     }
     .list{

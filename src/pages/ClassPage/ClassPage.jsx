@@ -1,5 +1,4 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom'
 import "../../assets/scss/pages/_class-page.scss"
 import Pagination from '../../components/Pagination/Pagination'
 

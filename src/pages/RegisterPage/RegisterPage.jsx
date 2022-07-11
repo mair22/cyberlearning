@@ -15,7 +15,7 @@ async function dangky(taiKhoan, matKhau, hoTen, soDT, maNhom, email) {
   };
   try {
     const result = await http.post(
-      "http://elearningnew.cybersoft.edu.vn/api/QuanLyNguoiDung/DangKy",
+      "https://elearningnew.cybersoft.edu.vn/api/QuanLyNguoiDung/DangKy",
       body
     );
     console.log(result.data.accessToken);
@@ -26,7 +26,7 @@ async function dangky(taiKhoan, matKhau, hoTen, soDT, maNhom, email) {
 
   try {
     const result = await http.post(
-      "http://elearningnew.cybersoft.edu.vn/api/QuanLyNguoiDung/DangNhap",
+      "https://elearningnew.cybersoft.edu.vn/api/QuanLyNguoiDung/DangNhap",
       body
     );
     console.log(result.data.accessToken);
@@ -47,38 +47,36 @@ export default function RegisterPage(props) {
   return (
     // <section className=" bg-image" style={{ backgroundImage: 'url("https://mdbcdn.b-cdn.net/img/Photos/new-templates/search-box/img4.webp")' }}>
     <section className="register">
-      <div className="mask d-flex align-items-center h-100 gradient-custom-3">
-        <div className="container h-100">
-          <div className="row d-flex justify-content-center align-items-center h-100">
-            <div className="col-12 col-md-9 col-lg-7 col-xl-6">
-              <div className="card" style={{ borderRadius: 15 }}>
-                <div className="card-body p-5">
-                  <h2 className="text-uppercase text-center mb-5">Đăng ký</h2>
-                  <form>
-                    <div className="form-outline mb-4">
-                      <input type="text" id="taiKhoan" className="form-control form-control-lg" placeholder='Tài khoản' onChange={(event) => setTaiKhoan(event.target.value)} />
-                    </div>
-                    <div className="form-outline mb-4">
-                      <input type="password" id="matKhau" className="form-control form-control-lg" placeholder='Mật khẩu' onChange={(event) => setMatKhau(event.target.value)} />
-                    </div>
-                    <div className="form-outline mb-4">
-                      <input type="password" id="matKhau" className="form-control form-control-lg" placeholder='Nhập lại mật khẩu' onChange={(event) => setMatKhau(event.target.value)} />
-                    </div>
-                    <div className="form-outline mb-4">
-                      <input type="text" id="hoTen" className="form-control form-control-lg" placeholder='Họ tên' onChange={(event) => setHoTen(event.target.value)} />
-                    </div>
-                    <div className="form-outline mb-4">
-                      <input type="email" id="email" className="form-control form-control-lg" placeholder='Email' onChange={(event) => setEmail(event.target.value)} />
-                    </div>
-                    <div className="form-outline mb-4">
-                      <input type="number" id="soDT" className="form-control form-control-lg" placeholder='Số điện thoại' onChange={(event) => setSoDT(event.target.value)} />
-                    </div>
-                    <div className="d-flex justify-content-center">
-                      <Button type="button" onClick={() => dangky(taiKhoan, matKhau, hoTen, soDT, maNhom, email)} className="custom-btn animation btn-block btn-lg gradient-custom-4 text-body">Đăng ký</Button>
-                    </div>
-                    <p className="text-center text-muted mt-5 mb-0">Bạn đã có tài khoản? <NavLink to="/dangnhap" className="fw-bold text-body"><u>Đăng nhập</u></NavLink></p>
-                  </form>
-                </div>
+      <div className="container">
+        <div className="row d-flex justify-content-center align-items-center">
+          <div className="col-12 col-md-9 col-lg-7 col-xl-6">
+            <div className="card" style={{ borderRadius: 15 }}>
+              <div className="card-body p-5">
+                <h2 className="text-uppercase text-center mb-5">Đăng ký</h2>
+                <form>
+                  <div className="form-outline mb-4">
+                    <input type="text" id="taiKhoan" className="form-control form-control-lg" placeholder='Tài khoản' onChange={(event) => setTaiKhoan(event.target.value)} />
+                  </div>
+                  <div className="form-outline mb-4">
+                    <input type="password" id="matKhau" className="form-control form-control-lg" placeholder='Mật khẩu' onChange={(event) => setMatKhau(event.target.value)} />
+                  </div>
+                  <div className="form-outline mb-4">
+                    <input type="password" id="matKhau" className="form-control form-control-lg" placeholder='Nhập lại mật khẩu' onChange={(event) => setMatKhau(event.target.value)} />
+                  </div>
+                  <div className="form-outline mb-4">
+                    <input type="text" id="hoTen" className="form-control form-control-lg" placeholder='Họ tên' onChange={(event) => setHoTen(event.target.value)} />
+                  </div>
+                  <div className="form-outline mb-4">
+                    <input type="email" id="email" className="form-control form-control-lg" placeholder='Email' onChange={(event) => setEmail(event.target.value)} />
+                  </div>
+                  <div className="form-outline mb-4">
+                    <input type="number" id="soDT" className="form-control form-control-lg" placeholder='Số điện thoại' onChange={(event) => setSoDT(event.target.value)} />
+                  </div>
+                  <div className="d-flex justify-content-center">
+                    <Button type="button" onClick={() => dangky(taiKhoan, matKhau, hoTen, soDT, maNhom, email)} className="custom-btn animation btn-block btn-lg gradient-custom-4 text-body">Đăng ký</Button>
+                  </div>
+                  <p className="text-center text-muted mt-5 mb-0">Bạn đã có tài khoản? <NavLink to="/dangnhap" className="fw-bold text-body"><u>Đăng nhập</u></NavLink></p>
+                </form>
               </div>
             </div>
           </div>

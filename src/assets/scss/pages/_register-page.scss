@@ -1,8 +1,12 @@
 .register{
-    background-image: url(https://mdbcdn.b-cdn.net/img/Photos/new-templates/search-box/img4.webp);
+    min-height: 100vh;
+    background-image: url(../../img/bussiness_img_1.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    .row{
+        min-height: 100vh;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
 }
