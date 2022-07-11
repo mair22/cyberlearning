@@ -20,7 +20,7 @@ export default function AdminTemplate(props) {
         return (
           <div className='container'>
             <div className='row' style={{ height: '100vh' }}>
-              <div className='sidebar col-3'>
+              <div className='sidebar col-12 col-lg-3'>
                 <div className="sidebar-brand">
                   <img src="https://cybersoft.edu.vn/wp-content/uploads/2021/03/logo-cyber-nav.svg" to="/" />
                 </div>
@@ -35,9 +35,15 @@ export default function AdminTemplate(props) {
                   </ul>
                 </div>
               </div>
-              <div className="layout col-9">
+              <div className="layout col-12 col-lg-9">
                 <div className='header'>
-                  <div className='navbar-user'>
+                  <div className='navbar-toggler'>
+                    <input type='checkbox' id='check' />
+                    <label for='check' className="checkbtn">
+                      <i className="fa fa-bars"></i>
+                    </label>
+                  </div>                 
+                  <div className='navbar-user dropdown-toggle'>
                     <img src="https://haycafe.vn/wp-content/uploads/2021/11/Anh-avatar-dep-chat-lam-hinh-dai-dien.jpg" alt="" />
                     <span>Nguyễn Văn A</span>
                     <ul className='navbar-user-menu'>

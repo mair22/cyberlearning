@@ -1,12 +1,3 @@
-@import '../themes/theme1';
-
-@include respond (phone){
-    th{
-        font-size: 10px;
-    }
-}
-
-
 .pagintionComponent{
     position: absolute;
     bottom: 5vh;

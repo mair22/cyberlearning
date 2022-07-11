@@ -1,17 +1,23 @@
+@import '../themes/theme1';
+
 .sidebar{
     background-color: rgb(30, 30, 42);
     padding: 0;
+    @include respond (tablet){
+        display: none;
+    }
     .sidebar-brand{
-        height: 15vh;
+        height: 30vh;
         padding: 1.5rem 0rem 2rem 0rem;
+        @include respond (tablet){
+            height: auto;
+        }
         img{
             padding-left: 2rem;
             width: 80%;
         }
-
     }
     .sidebar-menu{
-    
         .sidebar-menu-list{
             list-style: none;
             li{
@@ -46,7 +52,24 @@
     .header{
         height: 10vh;
         background: white;
-        box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;        .navbar-user{
+        box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;        
+        padding-top: 10px;
+        padding-left: 10px;
+        .navbar-toggler{
+            display: inline-block;
+            input{
+                display: none;
+            }
+            .checkbtn{
+                font-size: 30px;
+                cursor: pointer;
+                display: none;
+                @include respond (tablet){
+                    display: inline-block;
+                }
+            }
+        }
+        .navbar-user{
             padding-top: 10px;
             padding-right: 10px;
             float: right;
@@ -65,7 +88,6 @@
                 color: black;
                 font-size: 1rem;
                 font-weight: 400;
-                padding-right: 25px;
             }
             .navbar-user-menu{
                 display: none;
