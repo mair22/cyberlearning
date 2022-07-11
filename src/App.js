@@ -36,7 +36,6 @@ function App() {
         <HomeTemplate exact path="/chitietkhoahoc" component={DetailPage} />
 
 
-
         <HomeTemplate exact path="/" component={HomePage} />
       </switch>
     </Router>

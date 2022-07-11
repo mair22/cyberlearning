@@ -2,7 +2,6 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import "../../assets/scss/pages/_home-page.scss";
 import { http } from '../../ulti/setting';
-// import axios from 'axios'; // no configuration
 import { Button } from "antd";
 
 
