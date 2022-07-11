@@ -1,4 +1,4 @@
-import { Route } from 'react-router-dom'
+import { NavLink, Route } from 'react-router-dom'
 import React from "react";
 
 export default function AdminTemplate(props) {
@@ -27,10 +27,10 @@ export default function AdminTemplate(props) {
                 <div className="sidebar-menu">
                   <ul className='sidebar-menu-list'>
                     <li className='list active'>
-                      <a href="#"><i className="fab fa-leanpub"></i><span>Quản lý khóa học</span></a>
+                      <NavLink to="/quanlykhoahoc"><i className="fab fa-leanpub"></i><span>Quản lý khóa học</span></NavLink>
                     </li>
                     <li className='list'>
-                      <a href="#"><i className="fa fa-users"></i><span>Quản lý người dùng</span></a>
+                      <NavLink to="/quanlynguoidung"><i className="fa fa-users"></i><span>Quản lý người dùng</span></NavLink>
                     </li>
                   </ul>
                 </div>

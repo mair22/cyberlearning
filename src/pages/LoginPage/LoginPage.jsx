@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { http } from "../../ulti/setting";
 import { Button } from "antd";
+import { Validation } from "../../validation/Validation";
+
+let kiemTra = new Validation();
 
 async function dangNhap(taiKhoan, matKhau) {
   console.log(taiKhoan, matKhau);
@@ -9,6 +12,14 @@ async function dangNhap(taiKhoan, matKhau) {
     taiKhoan: taiKhoan,
     matKhau: matKhau,
   };
+
+  //Check validation
+  let valid = true;
+  valid &= kiemTra.kiemTraRong(taiKhoan,'#error_required_taiKhoan') & kiemTra.kiemTraRong(matKhau,'#error_required_matKhau');
+  if(valid != true){
+    return;
+  }
+
   try {
     const result = await http.post(
       "https://elearningnew.cybersoft.edu.vn/api/QuanLyNguoiDung/DangNhap",
@@ -42,6 +53,7 @@ export default function LoginPage(props) {
                       placeholder="Tài khoản"
                       onChange={(event) => setTaiKhoan(event.target.value)}
                     />
+                    <p className="text-danger" id="error_required_taiKhoan"></p>
                   </div>
                   <div className="form-outline mb-4">
                     <input
@@ -51,6 +63,7 @@ export default function LoginPage(props) {
                       placeholder="Mật khẩu"
                       onChange={(event) => setMatKhau(event.target.value)}
                     />
+                    <p className="text-danger" id="error_required_matKhau"></p>
                   </div>
                   <div className="d-flex justify-content-center">
                     <Button
