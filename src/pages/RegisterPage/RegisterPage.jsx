@@ -49,18 +49,6 @@ async function dangky(taiKhoan, matKhau, nhapLaiMatKhau, hoTen, soDT, email, maN
   } catch (error) {
     console.log(error);
   }
-
-  // try {
-  //   const result = await http.get(
-  //     "https://elearningnew.cybersoft.edu.vn/api/QuanLyNguoiDung/DangNhap",
-  //     body
-  //   );
-  //   console.log(result.data.accessToken);
-  //   localStorage.setItem("token", result.data.accessToken);
-  // } catch (error) {
-  //   console.log(error);
-  // }
-
 }
 
 export default function RegisterPage(props) {
