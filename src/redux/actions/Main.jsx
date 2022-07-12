@@ -1,5 +1,7 @@
+import { SearchAPI } from "../../Api/Main";
 import { CourseAPI } from "../../Api/Main";
 import { createAction } from "./Course";
+import { SEARCH } from "./Type";
 import { FETCH_COURSES, FETCH_COURSES_DETAILS } from "./Type";
 
 export const fetchCourseBase = () => {
@@ -42,4 +44,17 @@ export const fetchCourseDetail = (id) => {
         console.log(err);
       });
   }
+}
+
+export const fetchSearch = (id) => {
+  return (dispatch) => {
+      SearchAPI.fetchSearch(id)
+    .then((res) => {
+      console.log(res);
+      dispatch(createAction(SEARCH, res.data));
+    })
+    .catch((err) => {
+      console.log(err);
+    });
+}
 }

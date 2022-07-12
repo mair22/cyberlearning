@@ -1,4 +1,19 @@
-# Getting Started with Create React App
+Phân chia công việc bài E-Learning của nhóm: 
+	+Nguyễn Tuấn Phúc
+	+Phạm Thành Đạt
+- Nguyễn Tuấn Phúc: 
+	+ Tạo dữ liệu API
+	+ Dùng API tạo chức năng cho toàn bộ trang chủ, danh mục khóa học và chi tiết khóa học
+	+ Dùng API cho trang đăng ký và đăng nhập + set localStore cho trang đăng nhập
+	+ Dùng API tạo trang tìm kiếm
+	+ Dùng API tạo chức năng thêm và chỉnh sửa khóa học
+
+- Phạm Thành Đạt:
+	+ Thiết kế giao diện (SCSS)
+	+ Validation trang đăng ký + đăng nhập
+	+ Tạo dữ liệu API
+	+ Dùng API cho trang thông tin cá nhân và cập nhật thông tin
+	+ Dùng API cho trang quản lý người dùng và chỉnh sửa người dùng# Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

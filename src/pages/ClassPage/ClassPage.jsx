@@ -6,7 +6,7 @@ export default function ClassPage(props) {
   return (
     <section className="class">
       <div className="container">
-        <a className="text-uppercase text-center mb-5">
+        <a className="">
           Thêm khóa học
         </a>
         <form>

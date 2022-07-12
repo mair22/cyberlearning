@@ -4,7 +4,6 @@ import { createBrowserHistory } from "history";
 import HomePage from "./pages/HomePage/HomePage";
 import RegisterPage from "./pages/RegisterPage/RegisterPage";
 import LoginPage from "./pages/LoginPage/LoginPage";
-import ListPage from "./pages/ListPage/ListPage";
 import HomeTemplate from "./templates/HomeTemplate";
 import AdminTemplate from "./templates/AdminTemplate";
 import Info from "./pages/Info/Info";
@@ -14,6 +13,8 @@ import ClassPage from "./pages/ClassPage/ClassPage";
 import UpdateClass from "./pages/ClassPage/UpdateClass";
 import UpdateUser from "./pages/UserPage/UpdateUser";
 import DetailPage from "./pages/DetailPage/DetailPage";
+import ListPage from "./pages/ListPage/ListPage";
+import SearchPage from "./pages/SearchPage/SearchPage";
 
 export const history = createBrowserHistory();
 
@@ -26,6 +27,7 @@ function App() {
         <HomeTemplate exact path="/dangky" component={RegisterPage} />
         <HomeTemplate exact path="/danhmuckhoahoc" component={ListPage} />
         <HomeTemplate exact path="/thongtinnguoidung" component={Info} />
+        <HomeTemplate exact path="/timkiemkhoahoc/:tenKhoaHoc" component={SearchPage}/>
         <AdminTemplate exact path="/quanlynguoidung" component={UserPage} />
         <AdminTemplate exact path="/quanlykhoahoc" component={ClassPage} />
         <AdminTemplate exact path="/themkhoahoc" component={UpdateClass} />

@@ -1,10 +1,10 @@
 import React, { Component } from "react";
-import ListPageItem from "../../components/Item/Item";
 import { connect } from "react-redux";
 import Carosel from "./Carosel";
 import { fetchCourseBase } from "../../redux/actions/Main";
+import Item from "../../components/Item/Item";
 
-class HomeScreen extends Component {
+class HomePage extends Component {
   render() {
     return (
       <div>
@@ -12,10 +12,8 @@ class HomeScreen extends Component {
         <h1 className="display-4 text-center">Danh sách khóa học</h1>
         <div className="container">
           <div className="row">
-            {this.props.courseList.map((item, index) => (
-              <div className="col-3">
-                <ListPageItem item={item} />
-              </div>
+            {this.props.courseListBase.map((item, index) => (
+                <Item item={item} />
             ))}
           </div>
         </div>
@@ -29,7 +27,7 @@ class HomeScreen extends Component {
 }
 
 const mapStateToProps = (state) => ({
-  courseList: state.course.courses,
+  courseListBase: state.course.courses,
 });
 
-export default connect(mapStateToProps)(HomeScreen);
+export default connect(mapStateToProps)(HomePage);

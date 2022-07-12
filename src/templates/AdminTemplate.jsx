@@ -22,7 +22,7 @@ export default function AdminTemplate(props) {
             <div className='row' style={{ height: '100vh' }}>
               <div className='sidebar col-12 col-lg-3'>
                 <div className="sidebar-brand">
-                  <img src="https://cybersoft.edu.vn/wp-content/uploads/2021/03/logo-cyber-nav.svg" to="/" />
+                  <a href="/"><img src="https://cybersoft.edu.vn/wp-content/uploads/2021/03/logo-cyber-nav.svg" alt="" /></a>
                 </div>
                 <div className="sidebar-menu">
                   <ul className='sidebar-menu-list'>
