@@ -1,7 +1,7 @@
-import { SearchAPI } from "../../Api/Main";
+import { InfoAPI, SearchAPI } from "../../Api/Main";
 import { CourseAPI } from "../../Api/Main";
 import { createAction } from "./Course";
-import { SEARCH } from "./Type";
+import { FETCH_INFO, SEARCH } from "./Type";
 import { FETCH_COURSES, FETCH_COURSES_DETAILS } from "./Type";
 
 export const fetchCourseBase = () => {
@@ -44,6 +44,19 @@ export const fetchCourseDetail = (id) => {
         console.log(err);
       });
   }
+}
+
+export const fetchInfo = () => {
+  return (dispatch) => {
+    InfoAPI.fetchInfo()
+    .then((res) => {
+      console.log(res);
+      dispatch(createAction(FETCH_INFO, res.data));
+    })
+    .catch((err) => {
+      console.log(err);
+    });
+}
 }
 
 export const fetchSearch = (id) => {

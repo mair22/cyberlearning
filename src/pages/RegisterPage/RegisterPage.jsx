@@ -33,7 +33,7 @@ async function dangky(taiKhoan, matKhau, nhapLaiMatKhau, hoTen, soDT, email, maN
   valid &= kiemTra.kiemTraNhapLai(matKhau,nhapLaiMatKhau,'#error_retype_nhapLaiMatKhau');
   //Kiểm tra email
   valid &= kiemTra.kiemTraEmail(email,'#error_regex_email');
-  if(valid != true){
+  if(valid !== true){
     return;
   }
 

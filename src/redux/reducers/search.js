@@ -1,11 +1,11 @@
 let initialState = {
-    seach: null
+    search: null
 };
 
 const SeachReducer = (state = initialState, action) => {
     switch (action.type) {
-        case "FETCH_COURSES_DETAIL":
-            state.coursesDetail = action.payload;
+        case "SEARCH":
+            state.search = action.payload;
             return { ...state };
         default:
             return state;

@@ -12,7 +12,7 @@ class Item extends Component {
             <div>
               <h1>{this.props.item.tenKhoaHoc}</h1>
               <div className="readmore">
-              <NavLink to={`/chitietkhoahoc/${this.props.item.maKhoaHoc}`} className="custom-btn animation">Đăng ký</NavLink>
+              <NavLink to={`/chitietkhoahoc/${this.props.item.maKhoaHoc}`} className="custom-btn animation">Chi tiết</NavLink>
               </div>
             </div>
           </div>

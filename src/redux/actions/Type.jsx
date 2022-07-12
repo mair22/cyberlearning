@@ -1,3 +1,4 @@
 export const FETCH_COURSES = "FETCH_COURSES";
 export const FETCH_COURSES_DETAILS = "FETCH_COURSES_DETAILS";
 export const SEARCH = "SEARCH";
+export const FETCH_INFO = "INFO"

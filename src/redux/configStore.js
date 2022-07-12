@@ -1,10 +1,12 @@
 import {createStore, combineReducers, applyMiddleware, compose} from 'redux';
 import reduxThunk from 'redux-thunk';
 import CourseReducer from '../redux/reducers/course';
+import InfoReducer from './reducers/info';
 import SeachReducer from './reducers/search';
 const rootReducers = combineReducers({
     course: CourseReducer,
-    search: SeachReducer
+    search: SeachReducer,
+    info: InfoReducer
 
 });
 

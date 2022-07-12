@@ -22,17 +22,6 @@ async function list() {
   }
 }
 
-async function research(id) {
-  let result = await http.get(`https://elearningnew.cybersoft.edu.vn/api/QuanLyKhoaHoc/LayDanhSachKhoaHoc?tenKhoaHoc=${id}`);
-  let input = "";
-  try {
-    let data = result.data;
-    }
-  catch (err) {
-    console.log(err);
-  }
-}
-
 export default function HeaderHome(props) {
   const [id, setId] = useState(""); 
   return (

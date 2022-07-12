@@ -26,6 +26,7 @@ async function dangNhap(taiKhoan, matKhau) {
       "https://elearningnew.cybersoft.edu.vn/api/QuanLyNguoiDung/DangNhap",
       body
     );
+    result.data.mat = matKhau;
     document.querySelector('#error_check_matKhau').innerHTML = '';
     console.log(result.data);
     console.log(result.data.maLoaiNguoiDung);
