@@ -9,12 +9,12 @@ export function Validation () {
   }
 
   this.kiemTraKiTu = function (value,selectorError) {
-    let regexLetter = /^(?=.{8,20}$)(?![_.])(?!.*[_.]{2})[a-zA-Z0-9._]+(?<![_.])$/;
+    let regexLetter = /^(?=.{1,20}$)(?!.*[_.]{2})[a-zA-Z0-9._]+(?<![_.])$/;
     if(regexLetter.test(value)) {
       document.querySelector(selectorError).innerHTML = '';
       return true;
     }
-    document.querySelector(selectorError).innerHTML = 'Kí tự không hợp lệ!';
+    document.querySelector(selectorError).innerHTML = 'Tài khoản không hợp lệ!';
     return false;
   }
   
