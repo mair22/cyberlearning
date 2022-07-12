@@ -2,6 +2,10 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { http } from "../../ulti/setting";
 import { Button } from "antd";
+import { Validation } from "../../validation/Validation";
+import { history } from "../../App";
+
+let kiemTra = new Validation();
 
 async function dangNhap(taiKhoan, matKhau) {
   console.log(taiKhoan, matKhau);
@@ -9,14 +13,31 @@ async function dangNhap(taiKhoan, matKhau) {
     taiKhoan: taiKhoan,
     matKhau: matKhau,
   };
+
+  //Check validation
+  let valid = true;
+  valid &= kiemTra.kiemTraRong(taiKhoan,'#error_required_taiKhoan') & kiemTra.kiemTraRong(matKhau,'#error_required_matKhau');
+  if(valid != true){
+    return;
+  }
+
   try {
     const result = await http.post(
       "https://elearningnew.cybersoft.edu.vn/api/QuanLyNguoiDung/DangNhap",
       body
     );
-    console.log(result.data.accessToken);
-    localStorage.setItem("token", result.data.accessToken);
+    document.querySelector('#error_check_matKhau').innerHTML = '';
+    console.log(result.data);
+    console.log(result.data.maLoaiNguoiDung);
+    localStorage.setItem("data", JSON.stringify(result.data));
+    if(result.data.maLoaiNguoiDung === "HV") {
+      history.push('/thongtinnguoidung')
+    }
+    else{
+      history.push('/quanlykhoahoc')
+    }
   } catch (error) {
+    document.querySelector('#error_check_matKhau').innerHTML = 'Tài khoản hoặc mật khẩu không đúng!';
     console.log(error);
   }
 }
@@ -42,6 +63,7 @@ export default function LoginPage(props) {
                       placeholder="Tài khoản"
                       onChange={(event) => setTaiKhoan(event.target.value)}
                     />
+                    <p className="text-danger" id="error_required_taiKhoan"></p>
                   </div>
                   <div className="form-outline mb-4">
                     <input
@@ -51,6 +73,8 @@ export default function LoginPage(props) {
                       placeholder="Mật khẩu"
                       onChange={(event) => setMatKhau(event.target.value)}
                     />
+                    <p className="text-danger" id="error_required_matKhau"></p>
+                    <p className="text-danger" id="error_check_matKhau"></p>
                   </div>
                   <div className="d-flex justify-content-center">
                     <Button

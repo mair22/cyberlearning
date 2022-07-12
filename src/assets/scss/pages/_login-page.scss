@@ -5,5 +5,12 @@
     background-size: cover;
     .row{
         min-height: 100vh;
+        input{
+            height: 40px;
+        }
+        button{
+            height: 40px;
+            padding: 0;
+        }
     }
 }
