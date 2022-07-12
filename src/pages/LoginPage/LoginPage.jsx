@@ -31,7 +31,7 @@ async function dangNhap(taiKhoan, matKhau) {
     console.log(result.data.maLoaiNguoiDung);
     localStorage.setItem("data", JSON.stringify(result.data));
     if(result.data.maLoaiNguoiDung === "HV") {
-      history.push('/thongtinnguoidung')
+      history.push('/home')
     }
     else{
       history.push('/quanlykhoahoc')

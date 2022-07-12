@@ -14,6 +14,7 @@ import ClassPage from "./pages/ClassPage/ClassPage";
 import UpdateClass from "./pages/ClassPage/UpdateClass";
 import UpdateUser from "./pages/UserPage/UpdateUser";
 import DetailPage from "./pages/DetailPage/DetailPage";
+import HomeBeforeTemplate from "./templates/HomeBeforeTemplate";
 
 export const history = createBrowserHistory();
 
@@ -21,18 +22,21 @@ function App() {
   return (
     <Router history={history}>
       <Switch>
-        <HomeTemplate exact path="/demo" component={Demo} />
-        <HomeTemplate exact path="/dangnhap" component={LoginPage} />
-        <HomeTemplate exact path="/dangky" component={RegisterPage} />
+        <HomeBeforeTemplate exact path="/dangnhap" component={LoginPage} />
+        <HomeBeforeTemplate exact path="/dangky" component={RegisterPage} />
+        
+        <HomeTemplate exact path="/home" component={HomePage} />
         <HomeTemplate exact path="/danhmuckhoahoc" component={ListPage} />
         <HomeTemplate exact path="/thongtinnguoidung" component={Info} />
+        <HomeTemplate exact path="/demo" component={Demo} />
+
         <AdminTemplate exact path="/quanlynguoidung" component={UserPage} />
         <AdminTemplate exact path="/quanlykhoahoc" component={ClassPage} />
         <AdminTemplate exact path="/themkhoahoc" component={UpdateClass} />
         <AdminTemplate exact path="/themnguoidung" component={UpdateUser} />
 
 
-        <HomeTemplate exact path="/" component={HomePage} />
+        <HomeBeforeTemplate exact path="/" component={HomePage} />
       </Switch>
     </Router>
   );

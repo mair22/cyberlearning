@@ -23,7 +23,7 @@ async function list() {
 
 }
 
-export default function HeaderHome(props) {
+export default function HeaderBefore(props) {
   return (
     <header className="header" id="header">
       <div className="container">
@@ -33,7 +33,7 @@ export default function HeaderHome(props) {
               <i className="fa fa-bars"></i>
             </button>
             <li className="navbar-item">
-              <NavLink className="navbar-item-brand" to="/home">
+              <NavLink className="navbar-item-brand" to="/">
                 <img src="https://cybersoft.edu.vn/wp-content/uploads/2021/03/logo-cyber-nav.svg" alt="" />
               </NavLink>
             </li>
@@ -56,9 +56,9 @@ export default function HeaderHome(props) {
               <input className="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
               <button className="btn btn-outline-warning my-2 my-sm-0" type="submit">Search</button>
             </form>
-            {/* <NavLink className="navbar-item font-weight-bolder" to="/dangky">Đăng ký</NavLink> */}
-            {/* <NavLink className="navbar-item font-weight-bolder" to="/dangnhap" >Đăng nhập</NavLink> */}
-            <div className='navbar-item navbar-user dropdown-toggle'>
+            <NavLink className="navbar-item font-weight-bolder" to="/dangky">Đăng ký</NavLink>
+            <NavLink className="navbar-item font-weight-bolder" to="/dangnhap" >Đăng nhập</NavLink>
+            {/* <div className='navbar-item navbar-user dropdown-toggle'>
               <img src="https://haycafe.vn/wp-content/uploads/2021/11/Anh-avatar-dep-chat-lam-hinh-dai-dien.jpg" alt="" />
               <span>Nguyễn Văn A</span>
               <ul className='navbar-user-menu'>
@@ -69,7 +69,7 @@ export default function HeaderHome(props) {
                   <a href="/">Đăng xuất</a>
                 </li>
               </ul>
-            </div>
+            </div> */}
           </ul>
         </nav>
       </div>
