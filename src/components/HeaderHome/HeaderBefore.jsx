@@ -1,7 +1,7 @@
 import React from "react";
-import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { http } from '../../ulti/setting';
+import { Button } from "antd";
 
 async function list() {
   let result = await http.get('https://elearningnew.cybersoft.edu.vn/api/QuanLyKhoaHoc/LayDanhMucKhoaHoc');
@@ -9,7 +9,7 @@ async function list() {
   try {
     let data = result.data;
     // console.log(data);
-    for(let i = 0; i < i; i++){
+    for (let i = 0; i < 6; i++) {
       dropDown.push(data[i]);
     }
   }
@@ -20,21 +20,10 @@ async function list() {
   for (let data of dropDown) {
     console.log(data);
   }
+
 }
 
-async function research(id) {
-  let result = await http.get(`https://elearningnew.cybersoft.edu.vn/api/QuanLyKhoaHoc/LayDanhSachKhoaHoc?tenKhoaHoc=${id}`);
-  let input = "";
-  try {
-    let data = result.data;
-    }
-  catch (err) {
-    console.log(err);
-  }
-}
-
-export default function HeaderHome(props) {
-  const [id, setId] = useState(""); 
+export default function HeaderBefore(props) {
   return (
     <header className="header" id="header">
       <div className="container">
@@ -44,7 +33,7 @@ export default function HeaderHome(props) {
               <i className="fa fa-bars"></i>
             </button>
             <li className="navbar-item">
-              <NavLink className="navbar-item-brand" to="/home">
+              <NavLink className="navbar-item-brand" to="/">
                 <img src="https://cybersoft.edu.vn/wp-content/uploads/2021/03/logo-cyber-nav.svg" alt="" />
               </NavLink>
             </li>
@@ -53,23 +42,23 @@ export default function HeaderHome(props) {
                 Danh mục khóa học
               </a>
               <div className="dropdown-menu">
-                <a className="dropdown-item" onClick={list}>Lập trình Backend</a>
-                <a className="dropdown-item" onClick={list}>Thiết kế Web</a>
-                <a className="dropdown-item" onClick={list}>Lập trình di động</a>
-                <a className="dropdown-item" onClick={list}>Lập trình Frontend</a>
-                <a className="dropdown-item" onClick={list}>Lập trình Full Stack</a>
-                <a className="dropdown-item" onClick={list}>Tư duy lập trình</a>
+                <a className="dropdown-item" href="" onClick={list}>Lập trình Backend</a>
+                <a className="dropdown-item" href="" onClick={list}>Thiết kế Web</a>
+                <a className="dropdown-item" href="" onClick={list}>Lập trình di động</a>
+                <a className="dropdown-item" href="" onClick={list}>Lập trình Frontend</a>
+                <a className="dropdown-item" href="" onClick={list}>Lập trình Full Stack</a>
+                <a className="dropdown-item" href="" onClick={list}>Tư duy lập trình</a>
               </div>
             </li>
           </ul>
           <ul className="navbar-list-2">
             <form className="navbar-item form-inline my-2 my-lg-0">
-              <input className="form-control mr-sm-2" type="search" onChange={(event) => setId(event.target.value)} placeholder="Search" aria-label="Search" />
-              <a className="btn btn-outline-warning my-2 my-sm-0" type="submit">Search</a>
+              <input className="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
+              <button className="btn btn-outline-warning my-2 my-sm-0" type="submit">Search</button>
             </form>
-            {/* <NavLink className="navbar-item font-weight-bolder" to="/dangky">Đăng ký</NavLink> */}
-            {/* <NavLink className="navbar-item font-weight-bolder" to="/dangnhap" >Đăng nhập</NavLink> */}
-            <div className='navbar-item navbar-user dropdown-toggle'>
+            <NavLink className="navbar-item font-weight-bolder" to="/dangky">Đăng ký</NavLink>
+            <NavLink className="navbar-item font-weight-bolder" to="/dangnhap" >Đăng nhập</NavLink>
+            {/* <div className='navbar-item navbar-user dropdown-toggle'>
               <img src="https://haycafe.vn/wp-content/uploads/2021/11/Anh-avatar-dep-chat-lam-hinh-dai-dien.jpg" alt="" />
               <span>Nguyễn Văn A</span>
               <ul className='navbar-user-menu'>
@@ -80,7 +69,7 @@ export default function HeaderHome(props) {
                   <a href="/">Đăng xuất</a>
                 </li>
               </ul>
-            </div>
+            </div> */}
           </ul>
         </nav>
       </div>
