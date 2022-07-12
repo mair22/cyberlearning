@@ -7,7 +7,7 @@ export default function UserPage(props) {
   return (
     <section className="user">
       <div className="container">
-        <a className="d-inline-block">
+        <a className="">
           Thêm người dùng
         </a>
         <form>
