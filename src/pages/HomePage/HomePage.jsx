@@ -2,10 +2,7 @@ import React, { Component } from "react";
 import ListPageItem from "../../components/Item/Item";
 import { connect } from "react-redux";
 import Carosel from "./Carosel";
-import { CourseAPI } from "../../Api/Main";
-import { createAction } from "../../redux/actions/Course";
-import { FETCH_COURSES } from "../../redux/actions/Type";
-import { fetchCourse } from "../../redux/actions/Main";
+import { fetchCourseBase } from "../../redux/actions/Main";
 
 class HomeScreen extends Component {
   render() {
@@ -27,7 +24,7 @@ class HomeScreen extends Component {
   }
 
   componentDidMount() {
-    this.props.dispatch(fetchCourse())
+    this.props.dispatch(fetchCourseBase());
   }
 }
 

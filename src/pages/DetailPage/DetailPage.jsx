@@ -6,8 +6,9 @@ class DetailPage extends Component {
   render() {
     return (
       <div>
-        <img src={this.props.courseDetail.hinhAnh} alt="courseDetail" />
-        <h3>{this.props.courseDetail.tenKhoaHoc}</h3>
+        <img src={this.props.courseDetail.hinhAnh} alt="Course Detail" />
+        <h1>{this.props.courseDetail.tenKhoaHoc}</h1>
+        <p>{this.props.courseDetail.moTa}</p>
       </div>
     );
   }
@@ -15,10 +16,11 @@ class DetailPage extends Component {
     this.props.dispatch(fetchCourseDetail(this.props.match.params.maKhoaHoc));
   }
 }
-const mapStateToProps = (state) => ({
-  courseDetail: state.course.courseDetail || {
+const mapStateToProps = state => ({
+  courseDetail: state.course.coursesDetail || {
     maKhoaHoc: "",
     tenKhoaHoc: "",
+    moTa: "",
     hinhAnh: "",
     nguoiTao: {
       taiKhoan: "",
