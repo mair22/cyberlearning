@@ -4,19 +4,21 @@ import { fetchCourseDetail } from "../../redux/actions/Main";
 
 class DetailPage extends Component {
   render() {
-    console.log("detailpage", this.props)
+    console.log("detailpage", this.props);
     return (
-      <div>
-        <img src={this.props.courseDetail.hinhAnh} alt="" />
-        <h1>{this.props.courseDetail.tenKhoaHoc}</h1>
-        <p>{this.props.courseDetail.moTa}</p>
-        <p>{this.props.courseDetail.nguoiTao.hoTen}</p>
-        <button>Đăng ký</button>
+      <div className="detailPage">
+        <div className="container">
+          <img src={this.props.courseDetail.hinhAnh} alt="" />
+          <h1>{this.props.courseDetail.tenKhoaHoc}</h1>
+          <p>{this.props.courseDetail.moTa}</p>
+          <p>{this.props.courseDetail.nguoiTao.hoTen}</p>
+          <button className="custom-btn animation">Đăng ký</button>
+        </div>
       </div>
     );
   }
   componentDidMount() {
-    console.log("check", this.props.match.params.maKhoaHoc)
+    console.log("check", this.props.match.params.maKhoaHoc);
     this.props.dispatch(fetchCourseDetail(this.props.match.params.maKhoaHoc));
   }
 }
